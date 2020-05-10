@@ -1,0 +1,4 @@
+"0","wscores1 <- wscores"
+"0","wscores1$clusters <- as.factor(cutree(avcl,3))"
+"0","ggparcoord(wscores1, columns=1:6, groupColumn=""clusters"", scale=""globalminmax"")+"
+"0","xlab("""")+ylab(""Percent upper secondary"")"

@@ -1,0 +1,512 @@
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+plot.Gam(fit, terms = "ns(medv, 4)")
+knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+plot.Gam(fit)
+fit
+summmary(fit)
+summary(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+summary(fit2)
+anova(fit,fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+summary(fit2)
+anova(fit,fit2)
+anova(fit2)
+fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+summary(fit2)
+anova(fit)
+anova(fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~., data = Btrain)
+summary(fit2)
+anova(fit)
+anova(fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~., data = Btrain)
+summary(fit2)
+anova(fit,fit2)
+knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- glm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~., data = Btrain)
+summary(fit2)
+anova(fit,fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~., data = Btrain)
+summary(fit2)
+anova(fit,fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- glm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~., data = Btrain)
+summary(fit2)
+anova(fit,fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~., data = Btrain)
+summary(fit2)
+anova(fit,fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+fit2 <- lm(dis ~., data = Btrain)
+summary(fit2)
+anova(fit,fit2)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+plot(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+plot(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+plot.gam(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+plot.Gam(fit)
+plot.Gam(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+plot(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+simplify(fit)
+fit1 <- gam(log(dis) + ns(medv, 4) + ns(nox, 4) + age)
+fit1 <- gam(log(dis) + ns(medv, 4) + ns(nox, 4) + age)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot(fit)
+fit1 <- gam(log(dis) + ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+plot(fit1)
+summary(fit1)
+fit1 <- lm(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+plot(fit1)
+summary(fit1)
+fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+plot(fit1)
+summary(fit1)
+fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+plot(fit1)
+summary(fit1)
+plot.Gam(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot(fit)
+fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+plot(fit1)
+summary(fit1)
+fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+plot(fit1)
+summary(fit1)
+anova(fit,fit1)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+Btest
+fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot(fit)
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.5, pretty=0)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.4, pretty=0)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.6, pretty=0)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.7, pretty=1)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.5, pretty=1)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+plot.Gam(fit,terms = "ns(medv, 4")
+plot.Gam(fit,terms = "ns(age, 4")
+plot.Gam(fit,terms = "ns(nox, 4")
+library(splines)
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+plot.Gam(fit,terms = "ns(medv, 4")
+plot.Gam(fit,terms = "ns(age, 4")
+plot.Gam(fit,terms = "ns(nox, 4")
+fit1 <- lm(dis ~ ns(medv,4) + ns(nox,4) + age, data = Btrain)
+summary(fit1)
+anova(fit1,fit)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - log(Btrain$dis))^2))
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+(ems <- mean((predict(tre) - log(Btrain$dis))^2))
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - log(Btrain$dis))^2)
+ems
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - log(Btrain$dis))^2)
+ems
+pred <- predict(tre,newdata = Btest)
+mean((pred - log(Btest$dis))^2)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - log(Btrain$dis))^2)
+ems
+pred <- predict(tre,newdata = Btest)
+mean((pred - log(Btest$dis))^2)
+library(tree)
+tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+pred <- predict(tre,newdata = Btest)
+mean((pred - log(Btest$dis))^2)
+library(tree)
+tre <- tree(dis ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+pred <- predict(tre,newdata = Btest)
+mean((pred - log(Btest$dis))^2)
+library(tree)
+tre <- tree(dis ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+pred <- predict(tre,newdata = Btest)
+mean((pred - Btest$dis)^2)
+library(tree)
+tre <- tree(dis ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+temse <- mean((predict(tre1)-(Btest$dis))^2)
+library(tree)
+tre <- tree(dis ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+temse <- mean((predict(tre1)-(Btest$dis))^2)
+temse
+library(tree)
+tre <- tree(dis ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+temse <- mean((predict(tre1)-(Btest$dis))^2)
+temse
+library(tree)
+tre <- tree(dis ~ medv+age+nox, data=Btrain)
+summary(tre)
+plot(tre)
+text(tre, cex=.8, pretty=1)
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+temse <- mean((predict(tre1)-(Btest$dis))^2)
+temse
+cvtre <- cv.tree(tre)
+cvtre
+cvtre <- cv.tree(tre)
+cvtre
+plot(cvtre$size,cvtre$dev,type = "b")
+cvtre <- cv.tree(tre)
+cvtre
+plot(cvtre$size,cvtre$dev,type = "b")
+m <- which.min(cvtre$dev)
+cvtre$size[m]
+cvtre <- cv.tree(tre)
+cvtre
+plot(cvtre$size,cvtre$dev,type = "b")
+m <- which.min(cvtre$dev)
+cvtre$size[m]
+tree <- prune.tree(tre,best = 4)
+plot(tree)
+text(tree,cex = .5,pretty=0)
+cvtre <- cv.tree(tre)
+cvtre
+plot(cvtre$size,cvtre$dev,type = "b")
+m <- which.min(cvtre$dev)
+cvtre$size[m]
+tree <- prune.tree(tre,best = 4)
+plot(tree)
+text(tree,cex = .8,pretty=0)
+cvtre <- cv.tree(tre)
+cvtre
+plot(cvtre$size,cvtre$dev,type = "b")
+m <- which.min(cvtre$dev)
+cvtre$size[m]
+tree <- prune.tree(tre,best = 4)
+plot(tree)
+text(tree,cex = .8,pretty=0)
+t_msetr <- mean((predict(tree,Btrain)-(Btrain$dis))^2)
+t_msetr
+cvtre <- cv.tree(tre)
+cvtre
+plot(cvtre$size,cvtre$dev,type = "b")
+m <- which.min(cvtre$dev)
+cvtre$size[m]
+tree <- prune.tree(tre,best = 4)
+plot(tree)
+text(tree,cex = .8,pretty=0)
+t_msetr <- mean((predict(tree,Btrain)-(Btrain$dis))^2)
+t_msetr
+t_msete <- mean((predict(tree,Btest)-(Btest$dis))^2)
+t_msete
+ranfo <- randomForest(dis ~ medv + age + nox, data = Btrain)
+ranfo <- randomForest(dis ~ medv + age + nox, data = Btrain)
+ranfo_msetr<- mean((predict(ranfo,Btrain) - (Btrain$dis))^2)
+ranfo_msetr
+ranfo <- randomForest(dis ~ medv + age + nox, data = Btrain)
+ranfo_msetr<- mean((predict(ranfo,Btrain) - (Btrain$dis))^2)
+ranfo_msetr
+ranfo_msete <- mean((predict(ranfo,Btest) - (Btest$dis))^2)
+ranfo_msete
+g_msetr <- mean((predict(fit,Btrain) - (Btrain$dis))^2)
+g_msetr
+g_msetr <- mean((predict(fit,Btrain) - (Btrain$dis))^2)
+g_msetr
+g_msete <- mean((predict(fit,Btest) - (Btest$dis))^2)
+g_msete

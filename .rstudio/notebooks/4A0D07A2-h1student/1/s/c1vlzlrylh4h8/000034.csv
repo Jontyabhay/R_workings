@@ -1,0 +1,4 @@
+"0","D1 <- as.matrix(dist(wscores,method=""euclidean""))"
+"0","avcl<- hclust(as.dist(D1),""average"")"
+"0","avcld <- as.dendrogram(avcl)"
+"0","plot(as.dendrogram(avcl))"

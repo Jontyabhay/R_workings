@@ -1,0 +1,18 @@
+---
+title: "GY638"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r}
+LondonData <- read.csv("DataScienceProj.csv",stringsAsFactors=FALSE)
+print(dim(LondonData))
+head(LondonData)
+str(LondonData)
+summary(LondonData)
+```
+

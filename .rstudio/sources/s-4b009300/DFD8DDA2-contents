@@ -1,0 +1,196 @@
+---
+title: "Assignment 1 ST464/ST684"
+author: "AKSHAY MISHRA(19250911)"
+date: "`r format(Sys.time(), '%X %d %B, %Y')`"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+```
+
+
+```{r, eval=T, echo=FALSE}
+suppressMessages(library(tidyverse))
+suppressMessages(library(ggplot2))
+suppressMessages(library(GGally))
+
+```
+
+
+
+#### Question 4
+
+
+
+```{r eval=T} 
+# change to eval=T
+w <- read.csv("worldhappiness2019.csv")
+names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+rownames(w)<- w$Country
+wscores <- w[,-(1:3)]
+```
+
+(a)
+```{r}
+cor(wscores)
+con <- data.frame(wscores,w$Country)
+pl1 <- ggplot(con,aes(x=con$GDP,y=con$Life)) + geom_point() + geom_text(aes(label=w$Country))
+pl1
+```
+
+The pair of variables with the highest correlation are Life and GDP.
+The outlying country on this graph is Swaziland.
+
+(b)
+```{r}
+D1 <- as.matrix(dist(wscores,method="euclidean"))
+avcl<- hclust(as.dist(D1),"average")
+avcld <- as.dendrogram(avcl)
+plot(as.dendrogram(avcl))
+plot(avcld,xlim = c(1,30),ylim = c(0,1.5))
+```
+
+Yes,Central African Republic is an Outlier.
+
+(c)
+```{r}
+library(dendextend)
+avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+plot(avcld2)
+plot(avcld2,xlim = c(1,30),ylim = c(0,1.5))
+cutree(avcl,3)
+
+screeplot <- function(p) {
+  e <- p$sdev ^ 2
+  e <- e / sum(e)
+  plot(
+    1:length(e),
+    e,
+    xlab = "Component number",
+    pch = 20,
+    ylab = "Variance proportion",
+    main = "Scree plot",
+    axes = F,
+    ylim = c(0, max(e)*1.04)
+  )
+  lines(1:length(e), e)
+  axis(1, at = 1:length(e))
+  axis(2)
+}
+
+sumPartition <- function(dat,z){
+  k <-length(unique(z))
+  nobs <- tapply(1:nrow(dat),z,length)
+  withinSS <- tapply(1:nrow(dat),z,function(i){
+    if (length(i)==1) 0
+    else {x<- dat[i,]
+    xm <- scale(x, scale=F)
+    sum(xm^2)
+    }
+  })
+  aveD <- tapply(1:nrow(dat),z,function(i){
+    if (length(i)==1) 0
+    else {x<- dat[i,]
+    xm <- scale(x, scale=F)
+    xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+    mean(xm)
+    }
+  })
+  
+  maxD <- tapply(1:nrow(dat),z,function(i){
+    if (length(i)==1) 0
+    else {x<- dat[i,]
+    xm <- scale(x, scale=F)
+    xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+    max(xm)
+    }
+  })
+  
+  part<- data.frame("N.obs"=nobs, "Within clus SS" = withinSS, "Ave dist  Centroid" = aveD,
+                    "Max dist centroid" =maxD)
+  rownames(part)<- paste("Cluster", 1:k)
+  
+  
+  
+  cCen <- cbind(simplify2array(tapply(1:nrow(dat),z,function(i){
+    x<- dat[i,]
+    if (length(i)==1) x
+    else {
+      colMeans(x)
+    }
+  })), colMeans(dat))
+  colnames(cCen)<- c(paste("Cluster", 1:k), "Grand centrd")
+  
+  cCenD <- as.matrix(dist(t(cCen[, -ncol(cCen)])))
+  cat("Final Partition\n")
+  cat("\n")
+  cat(paste("Number of clusters ", k))
+  cat("\n")
+  
+  cat("\n")
+  print(part, quote=F)
+  cat("\n")
+  cat("\n")
+  cat("Cluster centroids\n")
+  cat("\n")
+  print(cCen,quote=F)
+  cat("\n")	
+  cat("\n")
+  cat("Distances between Cluster centroids\n")
+  cat("\n")
+  print(cCenD,quote=F)	
+  list(withinSS=withinSS, aveD=aveD, centroids=cCen, centroidDist=cCenD)	
+}
+
+sumPartition(wscores,cutree(avcl,3))
+```
+
+The cluster sizes are 111 in cluster1, 44 in cluster2 and 1 in cluster3.
+Total countries in three cluster solution is 156.
+Ireland belongs to cluster: 1.
+India belongs to cluster: 2.
+Cluster 1 has the highest Family score.
+Cluster 1 has the highest  scores overall.
+
+(d)
+```{r}
+wscores1 <- wscores
+wscores1$clusters <- as.factor(cutree(avcl,3))
+ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="globalminmax")+
+xlab("")+ylab("Percent upper secondary")
+```
+
+The lowest scoring cluster(3rd cluster) is unusual becuase freedom and generosity fairly better to the other countires with good GDP and family scores.However, the value of Family is almost equal to zero and GDP is also near to the zero.
+
+(e)
+```{r}
+set.seed(123)
+kmen <- kmeans(wscores,3,nstart= 10)
+tabform<-table(con$w.Country,kmen$cluster)
+tabform
+```
+No,There are no outlier countries.
+
+(f)
+```{r}
+kme2 <- as.factor(kmen$cluster)
+we1 <- data.frame(con,kme2)
+head(we1)
+
+ggparcoord(we1,columns=1:5, groupColumn="kme2",scale="globalminmax")
+
+sumPartition(wscores,kmen$cluster)
+```
+
+Cluster 1 has the highest Family score.
+Cluster 1 has the highest  scores overall.
+
+(g)
+```{r}
+boxplot(w$Score~we1$kme2)
+```
+
+The Highest scores follows the pattern of cluster1 then cluster2 and then cluster3.Mean of cluster1 is in range 6-7, for cluster2 within 5-6 and cluster3 within 4-5.

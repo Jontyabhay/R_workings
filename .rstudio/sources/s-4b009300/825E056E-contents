@@ -1,0 +1,133 @@
+---
+title: "Assignment 3 ST464/ST684"
+author: "Akshay Mishra(19250911)"
+date: "`r format(Sys.time(), '%X %d %B, %Y')`"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+```
+
+
+```{r, eval=T, echo=FALSE}
+suppressMessages(library(tidyverse))
+suppressMessages(library(ggplot2))
+suppressMessages(library(GGally))
+
+```
+
+
+
+#### Question 2
+
+
+
+```{r eval=T} 
+# change to eval=T
+library(MASS)
+library(ISLR)
+library(class)
+m <- median(Auto$mpg)
+Auto$mpg01 <- factor(ifelse(Auto$mpg <= m, 0, 1))
+ set.seed(1) 
+s <- sample(nrow(Auto), round(.5*nrow(Auto)))
+Atrain <- Auto[s,]
+Atest <- Auto[-s,]
+```
+
+(a)
+```{r}
+ggplot(data=Atrain, aes(x=weight, y=acceleration, color=mpg01)) +
+geom_point(alpha=.5)
+```
+
+
+(b)
+```{r}
+l <- lda(mpg01~weight+acceleration,data=Atrain)
+l
+plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+grid <- expand.grid(
+weight = seq(1000, 5000, length = 100),
+acceleration = seq(0, 35, length = 100)
+)
+
+grid$prob <- predict(l, grid)$posterior[,"1"]
+ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+geom_point(aes(color=mpg01),alpha=.5)+
+geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+
+pred <- predict(l,newdata = Atest)$class
+table(Atest$mpg01, pred)
+mean(Atest$mpg01 != pred)
+```
+
+The test error of the model or the overall mis-classification rate is 12.7 %.
+
+(c)
+```{r}
+q <- qda(mpg01~weight+acceleration,data=Atrain)
+q
+qda.grid <- expand.grid(
+weight = seq(1000, 5000, length = 100),
+acceleration = seq(0, 35, length = 100)
+)
+
+qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+geom_point(aes(color=mpg01),alpha=.5)+
+geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+
+
+qpred <- predict(q,newdata = Atest)$class
+table(Atest$mpg01, qpred)
+mean(Atest$mpg01 != qpred)
+```
+
+The test error rate is 11.7 %. QDA is better than LDA as its test error rate is less than that of LDA.
+
+(d)
+```{r}
+lda <- lda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+lda
+
+ldapred <- predict(lda,newdata = Atest)$class
+table(Atest$mpg01, ldapred)
+mean(Atest$mpg01 != ldapred)
+```
+
+The test error for this model obtained is 12.75 %.
+
+(e)
+```{r}
+qda <- qda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+qda
+
+qdapred <- predict(qda,newdata = Atest)$class
+table(Atest$mpg01, qdapred)
+mean(Atest$mpg01 != qdapred)
+```
+
+Both LDA and QDA are better as their test error rates are same i.e. 12.75 %.
+
+(f)
+```{r}
+xdatatrain <- scale(Atrain[,3:6])
+means <- attr(xdatatrain,"scaled:center")
+sds<- attr(xdatatrain,"scaled:scale")
+xdataTest <- scale(Atest[,3:6], center=means, scale=sds)
+p1 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=5)
+t1 <- table(Atest$mpg01, p1)
+t1
+mean(Atest$mpg01 != p1)
+
+p2 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=30)
+t2 <- table(Atest$mpg01, p2)
+t2
+mean(Atest$mpg01 != p2)
+```
+
+The value of k=5 gives us a better result with test error rate of 11.7 % on the test set as its test error is less than that of k=30 which is 12.24 %.

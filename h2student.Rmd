@@ -1,0 +1,76 @@
+---
+title: "Assignment 2 ST464/ST684"
+author: "AKSHAY MISHRA"
+date: "`r format(Sys.time(), '%X %d %B, %Y')`"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+```
+
+
+```{r, eval=T, echo=FALSE}
+suppressMessages(library(tidyverse))
+suppressMessages(library(ggplot2))
+suppressMessages(library(GGally))
+
+```
+
+
+
+#### Question 1
+
+
+
+```{r eval=T} 
+# change to eval=T
+bfat <- read.table("bodyfat.txt", header=T)
+bfat <- bfat[,c("neck","abdomen", "knee", "ankle")]
+source("h2code.R")
+```
+
+(a)
+```{r}
+pairs(bfat, gap=0.5)
+```
+
+Yes, there is a presence of outliers in the figure at the neck, abdomen, knee and ankle plots.
+
+(b)
+```{r}
+sapply(bfat[,-5],var)
+p <- prcomp(bfat[,-5],scale=T,rext=T)
+summary(p)
+screeplot(p)
+```
+
+The percentage of variability for PC1 is 66.29 while the percetage of variability for PC2 in data set is 85.35
+
+Most of the variability is covered by the first two components PC1 and PC2.
+The graph becomes less steep after the second component.Therefore we take PC1 and PC2 into consideration.
+
+(c)
+```{r}
+biplot(p,sacle=0,cex=c(.5,.5),cex.axis=.5)
+```
+
+Abdomen, neck and knee are highly correlated due to their closeness to each other. Rest for ankle case its away from the other three so not much of high correlation
+Body fat values on upper right quadrant are high in PC1 and PC2, therefore high abdomen, neck and knee values and low ankle values.
+  Body fat values on lower right quadrant are high in PC1 and low on PC2, therefore mostly have low values on abdomen, neck and knee and high ankle values.
+  Body fat values on upper left quadrant have high values in PC2 and low on PC1, therefore have high values on abdomen, neck and knee and low value on ankle.
+  Body fat values on lower left quadrant have low values in PC1 and PC2, therefore mostly have low values on abdomen, neck and knee and high ankle values.
+  
+There is a presence of outliers from the graph plotted.
+The values are 84 and 31.
+
+(d)
+```{r}
+p1 <- prcomp(bfat[-31,-84],sacle=T)
+summary(p1)
+biplot(p1,scale=0,cex=c(.5,.5),cex.axis=.5)
+```
+
+No visible outliers are there and variance for PC2 has declined.

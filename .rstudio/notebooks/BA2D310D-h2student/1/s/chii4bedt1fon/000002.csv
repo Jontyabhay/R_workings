@@ -1,0 +1,4 @@
+"0","# change to eval=T"
+"0","bfat <- read.table(""bodyfat.txt"", header=T)"
+"0","bfat <- bfat[,c(""neck"",""abdomen"", ""knee"", ""ankle"")]"
+"0","source(""h2code.R"")"

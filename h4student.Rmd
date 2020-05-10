@@ -1,0 +1,118 @@
+---
+title: "Assignment 4 ST464/ST684"
+author: "AKSHAY MISHRA(19250911)"
+date: "`r format(Sys.time(), '%X %d %B, %Y')`"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+```
+
+
+```{r, eval=T, echo=FALSE}
+suppressMessages(library(MASS))
+suppressMessages(library(randomForest))
+suppressMessages(library(gam))
+suppressMessages(library(tree))
+```
+
+#### Question 2
+
+(a)
+```{r}
+library(splines)
+
+set.seed(123)
+s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+Btrain <- Boston[s,]
+Btest <- Boston[-s,]
+
+fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+summary(fit)
+```
+(b)
+```{r}
+plot.Gam(fit,terms = "ns(medv, 4")
+plot.Gam(fit,terms = "ns(age, 4")
+plot.Gam(fit,terms = "ns(nox, 4")
+```
+
+Yes, it appears from the graph that the linear term is appropriate for the age predictor.
+
+(c)
+```{r}
+fit1 <- lm(dis ~ ns(medv,4) + ns(nox,4) + age, data = Btrain)
+summary(fit1)
+anova(fit1,fit)
+```
+
+The reduced model is better than full model. Therefore , we cannot reject null hypothesis.
+
+#### Question 4
+
+(a)
+```{r}
+library(tree)
+tre <- tree(dis ~ medv+age+nox, data=Btrain)
+summary(tre)
+
+plot(tre)
+text(tre, cex=.8, pretty=0)
+
+ems <- mean((predict(tre) - (Btrain$dis))^2)
+ems
+
+tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+temse <- mean((predict(tre1)-(Btest$dis))^2)
+temse
+```
+
+The training MSE: 1.0177
+The test MSE: 0.6011
+
+(b)
+```{r}
+cvtre <- cv.tree(tre)
+cvtre
+
+plot(cvtre$size,cvtre$dev,type = "b")
+
+m <- which.min(cvtre$dev)
+cvtre$size[m]
+
+tree <- prune.tree(tre,best = 4)
+plot(tree)
+text(tree,cex = .8,pretty=0)
+
+t_msetr <- mean((predict(tree,Btrain)-(Btrain$dis))^2)
+t_msetr
+
+t_msete <- mean((predict(tree,Btest)-(Btest$dis))^2)
+t_msete
+```
+
+MSE of train tree is greater than MSE of train pure. MSE of test tree is less than MSE of test pure. For test data, MSE is greater than before. It is less than before for train data.
+
+(c)
+```{r}
+ranfo <- randomForest(dis ~ medv + age + nox, data = Btrain)
+
+ranfo_msetr<- mean((predict(ranfo,Btrain) - (Btrain$dis))^2)
+ranfo_msetr
+
+ranfo_msete <- mean((predict(ranfo,Btest) - (Btest$dis))^2)
+ranfo_msete
+```
+(d)
+```{r}
+g_msetr <- mean((predict(fit,Btrain) - (Btrain$dis))^2)
+g_msetr
+
+g_msete <- mean((predict(fit,Btest) - (Btest$dis))^2)
+g_msete
+```
+
+In the case of train data, Radom forest model has the lowest MSE among all the models compared. In the case of test data, Random forest model has also the lowest MSE between all the models. So Random forest model has a better performance.

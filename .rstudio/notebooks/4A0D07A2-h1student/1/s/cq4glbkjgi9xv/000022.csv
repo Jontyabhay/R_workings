@@ -1,0 +1,3 @@
+"0","library(dendextend)"
+"0","avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))"
+"0","plot(avcld2)"

@@ -1,0 +1,5 @@
+"0","# change to eval=T"
+"0","w <- read.csv(""worldhappiness2019.csv"")"
+"0","names(w)<- c( ""Rank"", ""Country"", ""Score"", ""GDP"", ""Family"", ""Life"", ""Freedom"", ""Generosity"", ""Trust"")"
+"0","rownames(w)<- w$Country"
+"0","wscores <- w[,-(1:3)]"

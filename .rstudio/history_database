@@ -1,0 +1,2475 @@
+1582556859866:lib
+1582556865344:ggplot()
+1582561605437:data(alcohol, package="robustbase")
+1582561605449:alcohol <- alcohol[,-7]
+1582562069250:w <- read.csv("worldhappiness2019.csv")
+1582562069259:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family",
+1582562069260:"Life", "Freedom", "Generosity", "Trust")
+1582562069261:rownames(w)<- w$Country
+1582562069262:wscores <- w[,-(1:3)]
+1582562199687:clear
+1582562294558:w <- read.csv("worldhappiness2019.csv")
+1582562748654:w <-  read.csv("worldhappiness2019.csv")
+1582562750304:w
+1582563174927:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582563189340:rownames(w)<- w$Country
+1582563197310:wscores <- w[,-(1:3)]
+1582846928479:cor(wscores)
+1582884702917:w
+1582884847311:cor(wscores)
+1582885855945:cor(wscores)
+1582885879647:clear
+1582885881083:clr
+1582885886949:clearPushBack()
+1582886030659:w <- read.csv("worldhappiness2019.csv")
+1582886049895:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family",
+1582886049896:"Life", "Freedom", "Generosity", "Trust")
+1582886210211:Sys.time()
+1582886294839:cor(wscores)
+1582886300075:cor(wscores)
+1582886319668:plot(wscores)
+1582886339728:# change to eval=T
+1582886339729:w <- read.csv("worldhappiness2019.csv")
+1582886339734:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582886339735:rownames(w)<- w$Country
+1582886339736:wscores <- w[,-(1:3)]
+1582886404275:cor(wscores)
+1582886410663:# Chunk 1: setup
+1582886410664:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1582886410666:# Chunk 2
+1582886410666:suppressMessages(library(tidyverse))
+1582886411908:suppressMessages(library(ggplot2))
+1582886411909:suppressMessages(library(GGally))
+1582886550963:cor(wscores)
+1582886630433:cor(wscores)
+1582886630435:plot(w$Trust~w$Freedom)
+1582886775649:w
+1582886861747:cor(wscores)
+1582886861751:plot(w$Trust~w$Freedom)
+1582886881410:# change to eval=T
+1582886881411:w <- read.csv("worldhappiness2019.csv")
+1582886881418:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582886881420:rownames(w)<- w$Country
+1582886881421:wscores <- w[,-(1:3)]
+1582886885981:cor(wscores)
+1582886885984:plot(w$Trust~w$Freedom)
+1582887003589:# change to eval=T
+1582887003598:w <- read.csv("worldhappiness2019.csv")
+1582887003604:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582887003605:rownames(w)<- w$Country
+1582887003606:wscores <- w[,-(1:3)]
+1582887130329:# change to eval=T
+1582887130337:w <- read.csv("worldhappiness2019.csv")
+1582887130342:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582887130343:rownames(w)<- w$Country
+1582887130344:wscores <- w[,-(1:3)]
+1582887130345:wscores
+1582887147586:cor(wscores)
+1582887418007:cor(wscores)
+1582887452048:cor(wscores)
+1582887452050:plot(w$Generosity~w$Trust)
+1582887491875:wscores
+1582887491895:cor(wscores)
+1582887491896:plot(w$Generosity~w$Trust)
+1582887832751:# change to eval=T
+1582887832752:w <- read.csv("worldhappiness2019.csv")
+1582887832758:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582887832759:rownames(w)<- w$Country
+1582887832760:wscores <- w[,-(1:3)]
+1582887849542:cor(wscores)
+1582887849545:plot(w$Generosity~w$Trust)
+1582887876130:# change to eval=T
+1582887876138:w <- read.csv("worldhappiness2019.csv")
+1582887876143:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582887876144:rownames(w)<- w$Country
+1582887876145:wscores <- w[,-(1:3)]
+1582887906296:# change to eval=T
+1582887906297:w <- read.csv("worldhappiness2019.csv")
+1582887906304:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582887906305:rownames(w)<- w$Country
+1582887906306:wscores <- w[,-(1:3)]
+1582887955964:# change to eval=T
+1582887955965:w <- read.csv("worldhappiness2019.csv")
+1582887955970:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582887955971:rownames(w)<- w$Country
+1582887955973:wscores <- w[,-(1:3)]
+1582888567908:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1582888568200:# change to eval=T
+1582888568201:w <- read.csv("worldhappiness2019.csv")
+1582888568209:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1582888568216:rownames(w)<- w$Country
+1582888568222:wscores <- w[,-(1:3)]
+1582888574670:cor(wscores)
+1582888574676:plot(w$Generosity~w$Trust)
+1582889648634:cor(wscores)
+1582890941265:cor(wscores)
+1582890941271:plot(w$Life~w$GDP)
+1582891003964:cor(wscores)
+1582891003970:plot(w$Life~w$GDP)
+1582891003978:wscores
+1582891242944:cor(wscores)
+1582891242949:plot(w$Life~w$GDP)
+1582891242957:w
+1582891486744:w
+1582891689056:cor(wscores)
+1582891689062:plot(w$Life~w$GDP)
+1582891689070:w
+1582892036107:d <- dist(wscores, "euclidean")
+1582892050608:d <- dist(wscores, "euclidean")
+1582892050617:d
+1582892130546:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582892130553:D1
+1582892556428:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582892556437:D1
+1582892556486:avcl<- hclust(as.dist(D1),"average")
+1582892556518:avcl
+1582892610101:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582892610111:D1
+1582892610161:avcl<- hclust(as.dist(D1),"average")
+1582892610169:avcl
+1582892610171:plot(as.dendrogram(avcl))
+1582893120598:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582893120607:D1
+1582893120663:avcl<- hclust(as.dist(D1),"average")
+1582893120671:avcl
+1582893120673:plot(as.dendrogram(avcl),hang = -1, cex = 0.6)
+1582893509933:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582893509942:D1
+1582893509991:avcl<- hclust(as.dist(D1),"average")
+1582893509999:avcld <- as.dendrogram(avcl)
+1582893510056:plot(avcd,type = "triangle",ylab = "height")
+1582893547797:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582893547806:D1
+1582893547858:avcl<- hclust(as.dist(D1),"average")
+1582893547866:avcld <- as.dendrogram(avcl)
+1582893547892:plot(avcld,type = "triangle",ylab = "height")
+1582893558678:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582893558688:D1
+1582893558740:avcl<- hclust(as.dist(D1),"average")
+1582893558748:avcld <- as.dendrogram(avcl)
+1582893558776:plot(avcld,type = "rectangle",ylab = "height")
+1582893773895:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582893773904:D1
+1582893773960:avcl<- hclust(as.dist(D1),"average")
+1582893773968:avcld <- as.dendrogram(avcl)
+1582893773996:plot(avcl)
+1582893837073:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582893837080:D1
+1582893837130:avcl<- hclust(as.dist(D1),"average")
+1582893837137:avcld <- as.dendrogram(avcl)
+1582893837170:plot(avcl,hang = -1,)
+1582893944057:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582893944073:D1
+1582893944128:avcl<- hclust(as.dist(D1),"average")
+1582893944135:avcld <- as.dendrogram(avcl)
+1582893944165:plot(avcld, xlim = c(1,20),ylim = c(1,8))
+1582894050129:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894050138:D1
+1582894050188:avcl<- hclust(as.dist(D1),"average")
+1582894050197:avcld <- as.dendrogram(avcl)
+1582894050295:plot(avcl,hang = -1)
+1582894055926:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894055934:D1
+1582894055987:avcl<- hclust(as.dist(D1),"average")
+1582894055994:avcld <- as.dendrogram(avcl)
+1582894056018:plot(avcl,hang = 1)
+1582894067496:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894067504:D1
+1582894067558:avcl<- hclust(as.dist(D1),"average")
+1582894067565:avcld <- as.dendrogram(avcl)
+1582894067596:plot(avcl,hang = 4)
+1582894099212:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894099222:D1
+1582894099272:avcl<- hclust(as.dist(D1),"average")
+1582894099279:avcld <- as.dendrogram(avcl)
+1582894099304:plot(avcl,hang = -1,axes = 0.6)
+1582894166591:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894166602:D1
+1582894166652:avcl<- hclust(as.dist(D1),"average")
+1582894166664:avcl
+1582894166666:avcld <- as.dendrogram(avcl)
+1582894166696:plot(avcld,
+1582894173386:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894173395:D1
+1582894173445:avcl<- hclust(as.dist(D1),"average")
+1582894173455:avcl
+1582894173457:avcld <- as.dendrogram(avcl)
+1582894176272:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894176281:D1
+1582894176331:avcl<- hclust(as.dist(D1),"average")
+1582894176339:avcl
+1582894176341:avcld <- as.dendrogram(avcl)
+1582894243408:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894243416:D1
+1582894243466:avcl<- hclust(as.dist(D1),"average")
+1582894243474:avcl
+1582894243476:avcld <- as.dendrogram(avcl)
+1582894243529:plot(avcld,xlim = c(1,156),ylim = c(1,8))
+1582894254524:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894254532:D1
+1582894254582:avcl<- hclust(as.dist(D1),"average")
+1582894254589:avcl
+1582894254591:avcld <- as.dendrogram(avcl)
+1582894254617:avcld
+1582894254619:plot(avcld,xlim = c(1,156),ylim = c(1,8))
+1582894277602:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894277611:D1
+1582894277660:avcl<- hclust(as.dist(D1),"average")
+1582894277669:avcl
+1582894277671:avcld <- as.dendrogram(avcl)
+1582894277695:avcld
+1582894375806:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894375816:D1
+1582894375864:avcl<- hclust(as.dist(D1),"average")
+1582894375874:avcl
+1582894375876:plot(as.dendrogram(avcl))
+1582894459270:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894459304:D1
+1582894459352:avcl<- hclust(as.dist(D1),"average")
+1582894459362:avcl
+1582894459364:avcld <- as.dendrogram(avcl)
+1582894459393:plot(avcld,xlim = c(1,156),ylim = c(0,1.5))
+1582894506650:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894506659:D1
+1582894506712:avcl<- hclust(as.dist(D1),"average")
+1582894506720:avcl
+1582894506722:avcld <- as.dendrogram(avcl)
+1582894506752:plot(avcld,xlim = c(1,20),ylim = c(0,1.5))
+1582894523441:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894523449:D1
+1582894523503:avcl<- hclust(as.dist(D1),"average")
+1582894523510:avcl
+1582894523512:avcld <- as.dendrogram(avcl)
+1582894523547:plot(avcld,xlim = c(1,30),ylim = c(0,1.5))
+1582894535489:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894535497:D1
+1582894535552:avcl<- hclust(as.dist(D1),"average")
+1582894535560:avcl
+1582894535562:avcld <- as.dendrogram(avcl)
+1582894535599:plot(avcld,xlim = c(1,50),ylim = c(0,1.5))
+1582894546277:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894546286:D1
+1582894546336:avcl<- hclust(as.dist(D1),"average")
+1582894546344:avcl
+1582894546346:avcld <- as.dendrogram(avcl)
+1582894546376:plot(avcld,xlim = c(1,40),ylim = c(0,1.5))
+1582894574323:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894574331:D1
+1582894574381:avcl<- hclust(as.dist(D1),"average")
+1582894574388:avcl
+1582894574390:avcld <- as.dendrogram(avcl)
+1582894574416:plot(as.dendrogram(avcl))
+1582894574504:plot(avcld,xlim = c(1,40),ylim = c(0,1.5))
+1582894590041:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582894590048:D1
+1582894590098:avcl<- hclust(as.dist(D1),"average")
+1582894590106:avcl
+1582894590108:avcld <- as.dendrogram(avcl)
+1582894590136:plot(as.dendrogram(avcl))
+1582894590227:plot(avcld,xlim = c(1,30),ylim = c(0,1.5))
+1582894685972:cor(wscores)
+1582894685977:plot(w$Life~w$GDP)
+1582894701519:cor(wscores)
+1582894701525:plot(w$Life~w$GDP)
+1582894701534:w
+1582896095743:avcld2 <- color_branches(avcld,k=4,col=c(2,3,5,4))
+1582896159935:library(dendextend)
+1582896159981:avcld2 <- color_branches(avcld,k=4,col=c(2,3,5,4))
+1582896167193:library(dendextend)
+1582896167195:avcld2 <- color_branches(avcld,k=4,col=c(2,3,5,4))
+1582896203680:library(dendextend)
+1582896203682:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582896203734:plot(avcld2)
+1582896252468:library(dendextend)
+1582896252470:avcld2 <- color_branches(avcld,k=4,col=c(2,3,5,4))
+1582896252526:plot(avcld2)
+1582896261176:library(dendextend)
+1582896261178:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582896261261:plot(avcld2)
+1582896368814:library(dendextend)
+1582896368817:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582896368873:plot(avcld2)
+1582896368990:cutree(avcl,3)
+1582896453624:library(dendextend)
+1582896453626:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582896453680:plot(avcld2)
+1582896453757:plot(avcld2,xlim = c(1,30),ylim = c(0,1.5))
+1582896453868:cutree(avcl,3)
+1582897238933:library(dendextend)
+1582897238942:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582897239005:plot(avcld2)
+1582897239131:plot(avcld2,xlim = c(1,30),ylim = c(0,1.5))
+1582897239239:cutree(avcl,3)
+1582897239259:sumPartition(wscores,cutree(avcl,3))
+1582897379298:library(dendextend)
+1582897379300:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582897379364:plot(avcld2)
+1582897379537:plot(avcld2,xlim = c(1,30),ylim = c(0,1.5))
+1582897379652:cutree(avcl,3)
+1582897379674:sumPartition <- function(dat,z){
+1582897379675:k <-length(unique(z))
+1582897379676:nobs <- tapply(1:nrow(dat),z,length)
+1582897379677:withinSS <- tapply(1:nrow(dat),z,function(i){
+1582897379678:if (length(i)==1) 0
+1582897379679:else {x<- dat[i,]
+1582897379680:xm <- scale(x, scale=F)
+1582897379681:sum(xm^2)
+1582897379682:}
+1582897379683:})
+1582897379683:aveD <- tapply(1:nrow(dat),z,function(i){
+1582897379684:if (length(i)==1) 0
+1582897379685:else {x<- dat[i,]
+1582897379686:xm <- scale(x, scale=F)
+1582897379687:xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+1582897379688:mean(xm)
+1582897379689:}
+1582897379690:})
+1582897379692:maxD <- tapply(1:nrow(dat),z,function(i){
+1582897379693:if (length(i)==1) 0
+1582897379694:else {x<- dat[i,]
+1582897379695:xm <- scale(x, scale=F)
+1582897379696:xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+1582897379697:max(xm)
+1582897379697:}
+1582897379698:})
+1582897379700:part<- data.frame("N.obs"=nobs, "Within clus SS" = withinSS, "Ave dist  Centroid" = aveD,
+1582897379701:"Max dist centroid" =maxD)
+1582897379702:rownames(part)<- paste("Cluster", 1:k)
+1582897379706:cCen <- cbind(simplify2array(tapply(1:nrow(dat),z,function(i){
+1582897379707:x<- dat[i,]
+1582897379708:if (length(i)==1) x
+1582897379709:else {
+1582897379710:colMeans(x)
+1582897379711:}
+1582897379712:})), colMeans(dat))
+1582897379713:colnames(cCen)<- c(paste("Cluster", 1:k), "Grand centrd")
+1582897379715:cCenD <- as.matrix(dist(t(cCen[, -ncol(cCen)])))
+1582897379716:cat("Final Partition\n")
+1582897379717:cat("\n")
+1582897379718:cat(paste("Number of clusters ", k))
+1582897379719:cat("\n")
+1582897379721:cat("\n")
+1582897379722:print(part, quote=F)
+1582897379723:cat("\n")
+1582897379724:cat("\n")
+1582897379725:cat("Cluster centroids\n")
+1582897379726:cat("\n")
+1582897379727:print(cCen,quote=F)
+1582897379728:cat("\n")
+1582897379729:cat("\n")
+1582897379730:cat("Distances between Cluster centroids\n")
+1582897379731:cat("\n")
+1582897379732:print(cCenD,quote=F)
+1582897379733:list(withinSS=withinSS, aveD=aveD, centroids=cCen, centroidDist=cCenD)
+1582897379734:}
+1582897379743:sumPartition(scorescutree(avcl,3))
+1582897412836:library(dendextend)
+1582897412838:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582897412949:plot(avcld2)
+1582897413032:plot(avcld2,xlim = c(1,30),ylim = c(0,1.5))
+1582897413169:cutree(avcl,3)
+1582897413191:sumPartition <- function(dat,z){
+1582897413192:k <-length(unique(z))
+1582897413193:nobs <- tapply(1:nrow(dat),z,length)
+1582897413194:withinSS <- tapply(1:nrow(dat),z,function(i){
+1582897413195:if (length(i)==1) 0
+1582897413196:else {x<- dat[i,]
+1582897413196:xm <- scale(x, scale=F)
+1582897413198:sum(xm^2)
+1582897413198:}
+1582897413199:})
+1582897413200:aveD <- tapply(1:nrow(dat),z,function(i){
+1582897413201:if (length(i)==1) 0
+1582897413202:else {x<- dat[i,]
+1582897413203:xm <- scale(x, scale=F)
+1582897413203:xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+1582897413204:mean(xm)
+1582897413205:}
+1582897413206:})
+1582897413208:maxD <- tapply(1:nrow(dat),z,function(i){
+1582897413208:if (length(i)==1) 0
+1582897413210:else {x<- dat[i,]
+1582897413212:xm <- scale(x, scale=F)
+1582897413214:xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+1582897413216:max(xm)
+1582897413218:}
+1582897413219:})
+1582897413222:part<- data.frame("N.obs"=nobs, "Within clus SS" = withinSS, "Ave dist  Centroid" = aveD,
+1582897413223:"Max dist centroid" =maxD)
+1582897413232:rownames(part)<- paste("Cluster", 1:k)
+1582897413236:cCen <- cbind(simplify2array(tapply(1:nrow(dat),z,function(i){
+1582897413237:x<- dat[i,]
+1582897413238:if (length(i)==1) x
+1582897413238:else {
+1582897413239:colMeans(x)
+1582897413240:}
+1582897413241:})), colMeans(dat))
+1582897413242:colnames(cCen)<- c(paste("Cluster", 1:k), "Grand centrd")
+1582897413244:cCenD <- as.matrix(dist(t(cCen[, -ncol(cCen)])))
+1582897413245:cat("Final Partition\n")
+1582897413246:cat("\n")
+1582897413247:cat(paste("Number of clusters ", k))
+1582897413248:cat("\n")
+1582897413250:cat("\n")
+1582897413251:print(part, quote=F)
+1582897413252:cat("\n")
+1582897413253:cat("\n")
+1582897413254:cat("Cluster centroids\n")
+1582897413255:cat("\n")
+1582897413256:print(cCen,quote=F)
+1582897413257:cat("\n")
+1582897413258:cat("\n")
+1582897413259:cat("Distances between Cluster centroids\n")
+1582897413260:cat("\n")
+1582897413260:print(cCenD,quote=F)
+1582897413261:list(withinSS=withinSS, aveD=aveD, centroids=cCen, centroidDist=cCenD)
+1582897413262:}
+1582897413271:sumPartition(wscores,cutree(avcl,3))
+1582899057107:ggparcoord(wscores, columns=1:7, groupColumn="clusters", scale="globalminmax")+
+1582899057109:xlab("")+ylab("Percent upper secondary")
+1582899073355:ggparcoord(wscores, columns=1:156, groupColumn="clusters", scale="globalminmax")+
+1582899073356:xlab("")+ylab("Percent upper secondary")
+1582899549378:wscores1 <- wscores
+1582899549387:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899566841:wscores1 <- wscores
+1582899566866:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899566870:ggparcoord(educ1, columns=1:7, groupColumn="clusters", scale="globalminmax")+
+1582899566872:xlab("")+ylab("Percent upper secondary")
+1582899582493:wscores1 <- wscores
+1582899582500:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899582503:ggparcoord(wscores1, columns=1:7, groupColumn="clusters", scale="globalminmax")+
+1582899582504:xlab("")+ylab("Percent upper secondary")
+1582899607304:wscores1 <- wscores
+1582899607310:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899607312:ggparcoord(wscores1, columns=1:7, groupColumn="clusters", scale="uniminmax")+
+1582899607313:xlab("")+ylab("Percent upper secondary")
+1582899617479:wscores1 <- wscores
+1582899617485:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899617488:ggparcoord(wscores1, columns=1:7, groupColumn="clusters", scale="globalminmax")+
+1582899617489:xlab("")+ylab("Percent upper secondary")
+1582899662101:wscores1 <- wscores
+1582899662109:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899662111:ggparcoord(wscores1, columns=1:7, groupColumn="countries", scale="globalminmax")+
+1582899662112:xlab("")+ylab("Percent upper secondary")
+1582899670475:wscores1 <- wscores
+1582899670483:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899670493:ggparcoord(wscores1, columns=1:7, groupColumn="clusters", scale="globalminmax")+
+1582899670494:xlab("")+ylab("Percent upper secondary")
+1582899847482:wscores1 <- wscores
+1582899847488:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899847490:ggparcoord(wscores1, columns=1:8, groupColumn="clusters", scale="globalminmax")+
+1582899847491:xlab("")+ylab("Percent upper secondary")
+1582899854695:wscores1 <- wscores
+1582899854704:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899854706:ggparcoord(wscores1, columns=1:7, groupColumn="clusters", scale="globalminmax")+
+1582899854707:xlab("")+ylab("Percent upper secondary")
+1582899862763:wscores1 <- wscores
+1582899862770:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899862772:ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="globalminmax")+
+1582899862773:xlab("")+ylab("Percent upper secondary")
+1582899868566:wscores1 <- wscores
+1582899868574:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899868576:ggparcoord(wscores1, columns=1:7, groupColumn="clusters", scale="globalminmax")+
+1582899868577:xlab("")+ylab("Percent upper secondary")
+1582899872561:wscores1 <- wscores
+1582899872567:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899872569:ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="globalminmax")+
+1582899872570:xlab("")+ylab("Percent upper secondary")
+1582899893381:wscores1 <- wscores
+1582899893390:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899893392:ggparcoord(wscores1, columns=1:8, groupColumn="clusters", scale="globalminmax")+
+1582899893393:xlab("")+ylab("Percent upper secondary")
+1582899896840:wscores1 <- wscores
+1582899896848:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899896850:ggparcoord(wscores1, columns=1:5, groupColumn="clusters", scale="globalminmax")+
+1582899896851:xlab("")+ylab("Percent upper secondary")
+1582899905959:wscores1 <- wscores
+1582899905967:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899905969:ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="globalminmax")+
+1582899905969:xlab("")+ylab("Percent upper secondary")
+1582899911100:wscores1 <- wscores
+1582899911109:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899911111:ggparcoord(wscores1, columns=1:5, groupColumn="clusters", scale="globalminmax")+
+1582899911112:xlab("")+ylab("Percent upper secondary")
+1582899924446:wscores1 <- wscores
+1582899924454:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899924456:ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="uniminmax")+
+1582899924467:xlab("")+ylab("Percent upper secondary")
+1582899962635:wscores1 <- wscores
+1582899962644:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899962647:ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="globalminmax")+
+1582899962648:xlab("")+ylab("Percent upper secondary")
+1582899975312:wscores1 <- wscores
+1582899975329:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582899975332:ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="uniminmax")+
+1582899975333:xlab("")+ylab("Percent upper secondary")
+1582900925845:cor(wscores)
+1582900925850:ggplot(w$Life~w$GDP)
+1582900930235:cor(wscores)
+1582900930239:plot(w$Life~w$GDP)
+1582901391324:cor(wscores)
+1582901391330:con <- data.frame(wscores,w$Country)
+1582901512841:cor(wscores)
+1582901512848:con <- data.frame(wscores,w$Country)
+1582901512854:pl1 <- ggplot(con,aes(x=con$GDP,y=con$Life)) + geom_point() + geom_text(aes(label=w$Country))
+1582901534992:cor(wscores)
+1582901534998:con <- data.frame(wscores,w$Country)
+1582901535006:pl1 <- ggplot(con,aes(x=con$GDP,y=con$Life)) + geom_point() + geom_text(aes(label=w$Country))
+1582901535029:pl1
+1582902425650:library(dendextend)
+1582902425651:avcld2 <- color_branches(avcld,k=3,col=c(2,3,5))
+1582902425707:plot(avcld2)
+1582902425804:plot(avcld2,xlim = c(1,30),ylim = c(0,1.5))
+1582902425917:cutree(avcl,3)
+1582902425937:screeplot <- function(p) {
+1582902425938:e <- p$sdev ^ 2
+1582902425939:e <- e / sum(e)
+1582902425940:plot(
+1582902425941:1:length(e),
+1582902425942:e,
+1582902425942:xlab = "Component number",
+1582902425943:pch = 20,
+1582902425944:ylab = "Variance proportion",
+1582902425945:main = "Scree plot",
+1582902425946:axes = F,
+1582902425947:ylim = c(0, max(e)*1.04)
+1582902425947:)
+1582902425948:lines(1:length(e), e)
+1582902425949:axis(1, at = 1:length(e))
+1582902425950:axis(2)
+1582902425951:}
+1582902425956:sumPartition <- function(dat,z){
+1582902425957:k <-length(unique(z))
+1582902425958:nobs <- tapply(1:nrow(dat),z,length)
+1582902425958:withinSS <- tapply(1:nrow(dat),z,function(i){
+1582902425959:if (length(i)==1) 0
+1582902425960:else {x<- dat[i,]
+1582902425961:xm <- scale(x, scale=F)
+1582902425962:sum(xm^2)
+1582902425963:}
+1582902425964:})
+1582902425965:aveD <- tapply(1:nrow(dat),z,function(i){
+1582902425965:if (length(i)==1) 0
+1582902425966:else {x<- dat[i,]
+1582902425967:xm <- scale(x, scale=F)
+1582902425968:xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+1582902425969:mean(xm)
+1582902425970:}
+1582902425971:})
+1582902425973:maxD <- tapply(1:nrow(dat),z,function(i){
+1582902425973:if (length(i)==1) 0
+1582902425974:else {x<- dat[i,]
+1582902425975:xm <- scale(x, scale=F)
+1582902425976:xm <- apply(xm, 1, function(y) sqrt(sum(y^2)))
+1582902425977:max(xm)
+1582902425978:}
+1582902425979:})
+1582902425981:part<- data.frame("N.obs"=nobs, "Within clus SS" = withinSS, "Ave dist  Centroid" = aveD,
+1582902425982:"Max dist centroid" =maxD)
+1582902425983:rownames(part)<- paste("Cluster", 1:k)
+1582902425986:cCen <- cbind(simplify2array(tapply(1:nrow(dat),z,function(i){
+1582902425987:x<- dat[i,]
+1582902425988:if (length(i)==1) x
+1582902425989:else {
+1582902425990:colMeans(x)
+1582902425991:}
+1582902425992:})), colMeans(dat))
+1582902425993:colnames(cCen)<- c(paste("Cluster", 1:k), "Grand centrd")
+1582902425995:cCenD <- as.matrix(dist(t(cCen[, -ncol(cCen)])))
+1582902425996:cat("Final Partition\n")
+1582902425997:cat("\n")
+1582902425998:cat(paste("Number of clusters ", k))
+1582902425999:cat("\n")
+1582902426001:cat("\n")
+1582902426002:print(part, quote=F)
+1582902426003:cat("\n")
+1582902426004:cat("\n")
+1582902426005:cat("Cluster centroids\n")
+1582902426006:cat("\n")
+1582902426007:print(cCen,quote=F)
+1582902426008:cat("\n")
+1582902426009:cat("\n")
+1582902426010:cat("Distances between Cluster centroids\n")
+1582902426011:cat("\n")
+1582902426012:print(cCenD,quote=F)
+1582902426013:list(withinSS=withinSS, aveD=aveD, centroids=cCen, centroidDist=cCenD)
+1582902426014:}
+1582902426020:sumPartition(wscores,cutree(avcl,3))
+1582903160990:set.seed(123)
+1582903160991:kmen <- kmeans(wscores,3,nstart= 10)
+1582903160995:tabform<-table(con$w.Country,kmen$cluster)
+1582903161001:tabform
+1582903689856:kme2 <- as.factor(kmen$cluster)
+1582903689862:we1 <- data.frame(con,kme2)
+1582903689864:head(we1)
+1582903759414:kme2 <- as.factor(kmen$cluster)
+1582903759434:we1 <- data.frame(con,kme2)
+1582903759436:head(we1)
+1582903759441:ggparcoord(we1,columns=1:6, groupColumn="kme2",scale="globalminmax")
+1582903766700:kme2 <- as.factor(kmen$cluster)
+1582903766705:we1 <- data.frame(con,kme2)
+1582903766707:head(we1)
+1582903766713:ggparcoord(we1,columns=1:5, groupColumn="kme2",scale="globalminmax")
+1582903779824:kme2 <- as.factor(kmen$cluster)
+1582903779827:we1 <- data.frame(con,kme2)
+1582903779829:head(we1)
+1582903779833:ggparcoord(we1,columns=1:5, groupColumn="kme2",scale="uniminmax")
+1582903841340:kme2 <- as.factor(kmen$cluster)
+1582903841345:we1 <- data.frame(con,kme2)
+1582903841348:head(we1)
+1582903841353:ggparcoord(we1,columns=1:5, groupColumn="kme2",scale="uniminmax")
+1582903841553:sumPartition(wscores,kmen$cluster)
+1582904099322:boxplot(w$Score~we1$kme2)
+1582904654802:D1 <- as.matrix(dist(wscores,method="euclidean"))
+1582904654812:avcl<- hclust(as.dist(D1),"average")
+1582904654822:avcld <- as.dendrogram(avcl)
+1582904654854:plot(as.dendrogram(avcl))
+1582904654962:plot(avcld,xlim = c(1,30),ylim = c(0,1.5))
+1582906333953:wscores1 <- wscores
+1582906333963:wscores1$clusters <- as.factor(cutree(avcl,3))
+1582906333966:ggparcoord(wscores1, columns=1:6, groupColumn="clusters", scale="globalminmax")+
+1582906333968:xlab("")+ylab("Percent upper secondary")
+1582906365873:kme2 <- as.factor(kmen$cluster)
+1582906365878:we1 <- data.frame(con,kme2)
+1582906365881:head(we1)
+1582906365887:ggparcoord(we1,columns=1:5, groupColumn="kme2",scale="globalminmax")
+1582906366178:sumPartition(wscores,kmen$cluster)
+1583745860984:pairs(bfat)
+1583745873080:# change to eval=T
+1583745873081:bfat <- read.table("bodyfat.txt", header=T)
+1583745873114:bfat <- bfat[,c("neck","abdomen", "knee", "ankle")]
+1583745873114:source("h2code.R")
+1583745962981:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1583745965829:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1583745973434:suppressMessages(library(tidyverse))
+1583745973435:suppressMessages(library(ggplot2))
+1583745973437:suppressMessages(library(GGally))
+1583746016823:suppressMessages(library(tidyverse))
+1583746016824:suppressMessages(library(ggplot2))
+1583746016826:suppressMessages(library(GGally))
+1583746023660:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1583746023752:suppressMessages(library(tidyverse))
+1583746023753:suppressMessages(library(ggplot2))
+1583746023754:suppressMessages(library(GGally))
+1583746037175:suppressMessages(library(tidyverse))
+1583746037177:suppressMessages(library(ggplot2))
+1583746037179:suppressMessages(library(GGally))
+1583746040052:# change to eval=T
+1583746040053:w <- read.csv("worldhappiness2019.csv")
+1583746040064:names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+1583746040081:rownames(w)<- w$Country
+1583746040088:wscores <- w[,-(1:3)]
+1583746042633:cor(wscores)
+1583746042637:con <- data.frame(wscores,w$Country)
+1583746042645:pl1 <- ggplot(con,aes(x=con$GDP,y=con$Life)) + geom_point() + geom_text(aes(label=w$Country))
+1583746042673:pl1
+1583746049505:pairs(bfat)
+1583746055785:# change to eval=T
+1583746055786:bfat <- read.table("bodyfat.txt", header=T)
+1583746055790:bfat <- bfat[,c("neck","abdomen", "knee", "ankle")]
+1583746055791:source("h2code.R")
+1583746186759:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1583746186764:suppressMessages(library(tidyverse))
+1583746186765:suppressMessages(library(ggplot2))
+1583746186766:suppressMessages(library(GGally))
+1583746225231:suppressMessages(library(tidyverse))
+1583746225234:suppressMessages(library(ggplot2))
+1583746225235:suppressMessages(library(GGally))
+1583746229105:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1583746231631:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1583746235570:# change to eval=T
+1583746235571:bfat <- read.table("bodyfat.txt", header=T)
+1583746235582:bfat <- bfat[,c("neck","abdomen", "knee", "ankle")]
+1583746235588:source("h2code.R")
+1583746239498:pairs(bfat)
+1583746241527:# change to eval=T
+1583746241529:bfat <- read.table("bodyfat.txt", header=T)
+1583746241559:bfat <- bfat[,c("neck","abdomen", "knee", "ankle")]
+1583746241563:source("h2code.R")
+1583746327108:sapply(bfat[,-5],var)
+1583746327111:p <- prcomp(bfat[,-5],scale=T,rext=T)
+1583746327124:summary(p)
+1583746327127:screenplot(p)
+1583746335241:sapply(bfat[,-5],var)
+1583746335244:p <- prcomp(bfat[,-5],scale=T,rext=T)
+1583746335256:summary(p)
+1583746335258:screeplot(p)
+1583746433979:biplot(p,sacle=0,cex=c(.5,.5),cex.axis=.5)
+1583746454545:biplot(p,sacle=0,cex=c(.5,.5),cex.axis=.5)
+1583746472169:suppressMessages(library(tidyverse))
+1583746472171:suppressMessages(library(ggplot2))
+1583746472172:suppressMessages(library(GGally))
+1583746474474:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1583746477313:# change to eval=T
+1583746477315:bfat <- read.table("bodyfat.txt", header=T)
+1583746477326:bfat <- bfat[,c("neck","abdomen", "knee", "ankle")]
+1583746477331:source("h2code.R")
+1583746480089:pairs(bfat)
+1583746482499:sapply(bfat[,-5],var)
+1583746482502:p <- prcomp(bfat[,-5],scale=T,rext=T)
+1583746482515:summary(p)
+1583746482518:screeplot(p)
+1583746485737:biplot(p,sacle=0,cex=c(.5,.5),cex.axis=.5)
+1583746801782:p1 <- prcomp(bfat[-31,-84],sacle=T)
+1583746801795:summary(p1)
+1583746801798:biplot(p1,scale=0,cex=c(.5,.5),cex.axis=.5)
+1584114285097:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1584114285188:pairs(bfat, gap=0.3)
+1584114291995:pairs(bfat, gap=0.4)
+1584114300767:pairs(bfat, gap=0.5)
+1584116284675:sapply(bfat[,-5],var)
+1584116284678:p <- prcomp(bfat[,-5],scale=T,rext=T)
+1584116284691:summary(p)
+1584116284693:screeplot(p)
+1585913116575:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1585913116663:suppressMessages(library(tidyverse))
+1585913116664:suppressMessages(library(ggplot2))
+1585913116665:suppressMessages(library(GGally))
+1585913120864:# change to eval=T
+1585913120865:library(MASS)
+1585913120883:library(ISLR)
+1585913120891:library(class)
+1585913120900:m <- median(Auto$mpg)
+1585913120905:Auto$mpg01 <- factor(ifelse(Auto$mpg <= m, 0, 1))
+1585913120907:set.seed(1)
+1585913120908:s <- sample(nrow(Auto), round(.5*nrow(Auto)))
+1585913120911:Atrain <- Auto[s,]
+1585913120920:Atest <- Auto[-s,]
+1585913157500:# change to eval=T
+1585913157502:library(MASS)
+1585913157504:library(ISLR)
+1585913157506:library(class)
+1585913157507:m <- median(Auto$mpg)
+1585913157509:Auto$mpg01 <- factor(ifelse(Auto$mpg <= m, 0, 1))
+1585913157511:set.seed(1)
+1585913157512:s <- sample(nrow(Auto), round(.5*nrow(Auto)))
+1585913157514:Atrain <- Auto[s,]
+1585913157522:Atest <- Auto[-s,]
+1585913159873:# change to eval=T
+1585913159874:library(MASS)
+1585913159876:library(ISLR)
+1585913159877:library(class)
+1585913159878:m <- median(Auto$mpg)
+1585913159880:Auto$mpg01 <- factor(ifelse(Auto$mpg <= m, 0, 1))
+1585913159882:set.seed(1)
+1585913159883:s <- sample(nrow(Auto), round(.5*nrow(Auto)))
+1585913159886:Atrain <- Auto[s,]
+1585913159893:Atest <- Auto[-s,]
+1585913887920:Atrain
+1585914168120:Atrain
+1585914168196:ggplot(data=Atrain, aes(x=balance, y=income, color=default)) +
+1585914168196:geom_point(alpha=.5)
+1585914217405:Atrain
+1585914217421:ggplot(data=Atrain, aes(x=weight, y=acceleration, color=default)) +
+1585914217422:geom_point(alpha=.5)
+1585914225605:Atrain
+1585914225624:ggplot(data=Atrain, aes(x=weight, y=acceleration, color=Atrain)) +
+1585914225625:geom_point(alpha=.5)
+1585914271045:Atrain
+1585914271066:ggplot(data=Atrain, aes(x=weight, y=acceleration, color=default)) +
+1585914271067:geom_point(alpha=.5)
+1585914339269:ggplot(data=Atrain, aes(x=weight, y=acceleration, color=blue)) +
+1585914339271:geom_point(alpha=.5)
+1585914370440:ggplot(data=Atrain, aes(x=weight, y=acceleration, color="blue")) +
+1585914370442:geom_point(alpha=.5)
+1585914383602:ggplot(data=Atrain, aes(x=weight, y=acceleration, color="default")) +
+1585914383603:geom_point(alpha=.5)
+1585914417222:ggplot(data=default, aes(x=weight, y=acceleration, color="default")) +
+1585914417228:geom_point(alpha=.5)
+1585914427858:ggplot(data=Atrain, aes(x=weight, y=acceleration, color="default")) +
+1585914427859:geom_point(alpha=.5)
+1585914443477:ggplot(data=Atrain, aes(x=weight, y=acceleration, color=default)) +
+1585914443479:geom_point(alpha=.5)
+1585914455479:ggplot(data=Atrain, aes(x=weight, y=acceleration, color="Atrain")) +
+1585914455480:geom_point(alpha=.5)
+1585914476208:ggplot(data=Atrain, aes(x=weight, y=acceleration, color=mpg01)) +
+1585914476210:geom_point(alpha=.5)
+1585914850544:l <- lda(default~balance+income,data=Default)
+1585914850572:l
+1585914862707:l <- lda(default~balance+income,data=mpg01)
+1585914876532:l <- lda(default~balance+income,data=Atrain)
+1585914938007:l <- lda(mpg01~balance+income,data=Atrain)
+1585914945253:l <- lda(default~balance+income,data=Atrain)
+1585914954308:l <- lda(default~balance+income,data="Atrain")
+1585914977104:f <- lda(default~balance+income,data=Default)
+1585914977132:f
+1585914986482:f <- lda(default~balance+income,data=Atrain)
+1585915135031:l <- lda(default~balance+income,data="mpg01")
+1585915142942:l <- lda(default~balance+income,data=mpg01)
+1585915150579:l <- lda(Atrain~balance+income,data=mpg01)
+1585915174892:l <- lda(default~weight+acceleration,data=Atrain)
+1585915182470:l <- lda(Atrain~weight+acceleration,data=Atrain)
+1585915228424:f <- lda(default~weight+acceleration,data=Atrain)
+1585915240528:f <- lda(Atrain~weight+acceleration,data=default)
+1585915247625:f <- lda(Atrain~weight+acceleration,data=Atrain)
+1585915289645:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585915289665:f
+1585915907557:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585915907574:f
+1585915907577:grid <- expand.grid(
+1585915907577:weight = seq(0, 2700, length = 100),
+1585915907578:acceleration = seq(700, 75000, length = 100)
+1585915907579:)
+1585915972773:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585915972792:f
+1585915972795:grid <- expand.grid(
+1585915972795:weight = seq(0, 2700, length = 100),
+1585915972796:acceleration = seq(700, 75000, length = 100)
+1585915972797:)
+1585915972806:grid$prob <- predict(f, grid)$posterior[,"Yes"]
+1585916022844:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585916022862:f
+1585916022864:grid <- expand.grid(
+1585916022865:weight = seq(0, 2700, length = 100),
+1585916022866:acceleration = seq(700, 75000, length = 100)
+1585916022867:)
+1585916022875:grid$prob <- predict(f, grid)$posterior[,"Yes"]
+1585916039019:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585916039037:f
+1585916039039:grid <- expand.grid(
+1585916039040:weight = seq(0, 2700, length = 100),
+1585916039041:acceleration = seq(700, 75000, length = 100)
+1585916039042:)
+1585916039051:grid$prob <- predict(f, grid)$posterior[,"Yes"]
+1585916109729:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585916109758:f
+1585916109760:grid <- expand.grid(
+1585916109761:weight = seq(0, 2700, length = 100),
+1585916109762:acceleration = seq(700, 75000, length = 100)
+1585916109763:)
+1585916109771:grid$prob <- predict(f, grid)$posterior[,"1"]
+1585916109788:ggplot(data=Default, aes(x=weight, y=acceleration)) +
+1585916109789:geom_point(aes(color=mpg01),alpha=.5)+
+1585916109789:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585916219994:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585916220014:f
+1585916220016:grid <- expand.grid(
+1585916220017:weight = seq(0, 2700, length = 100),
+1585916220018:acceleration = seq(700, 75000, length = 100)
+1585916220019:)
+1585916220028:grid$prob <- predict(f, grid)$posterior[,"1"]
+1585916220045:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585916220046:geom_point(aes(color=mpg01),alpha=.5)+
+1585916220047:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585916386104:f <- lda(mpg01~weight+acceleration,data=Atrain)
+1585916386126:f
+1585916386128:grid <- expand.grid(
+1585916386129:weight = seq(1500, 5500, length = 100),
+1585916386130:acceleration = seq(0, 25, length = 100)
+1585916386131:)
+1585916386141:grid$prob <- predict(f, grid)$posterior[,"1"]
+1585916386160:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585916386161:geom_point(aes(color=mpg01),alpha=.5)+
+1585916386162:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585916467802:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585916467822:l
+1585916467824:grid <- expand.grid(
+1585916467826:weight = seq(1500, 5500, length = 100),
+1585916467828:acceleration = seq(0, 25, length = 100)
+1585916467830:)
+1585916467844:grid$prob <- predict(f, grid)$posterior[,"1"]
+1585916467861:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585916467862:geom_point(aes(color=mpg01),alpha=.5)+
+1585916467863:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917088565:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917088585:l
+1585917088588:grid <- expand.grid(
+1585917088588:weight = seq(1500, 5500, length = 100),
+1585917088589:acceleration = seq(0, 25, length = 100)
+1585917088590:)
+1585917088601:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917088623:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917088624:geom_point(aes(color=mpg01),alpha=.5)+
+1585917088625:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917101506:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917101525:l
+1585917101527:grid <- expand.grid(
+1585917101528:weight = seq(1000, 5000, length = 100),
+1585917101529:acceleration = seq(0, 25, length = 100)
+1585917101530:)
+1585917101538:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917101557:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917101557:geom_point(aes(color=mpg01),alpha=.5)+
+1585917101558:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917109071:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917109090:l
+1585917109092:grid <- expand.grid(
+1585917109093:weight = seq(1000, 5000, length = 100),
+1585917109094:acceleration = seq(0, 30, length = 100)
+1585917109103:)
+1585917109119:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917109137:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917109138:geom_point(aes(color=mpg01),alpha=.5)+
+1585917109139:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917116515:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917116533:l
+1585917116535:grid <- expand.grid(
+1585917116536:weight = seq(1000, 5000, length = 100),
+1585917116537:acceleration = seq(0, 50, length = 100)
+1585917116538:)
+1585917116546:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917116574:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917116575:geom_point(aes(color=mpg01),alpha=.5)+
+1585917116576:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917128810:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917128829:l
+1585917128831:grid <- expand.grid(
+1585917128833:weight = seq(1000, 5000, length = 100),
+1585917128833:acceleration = seq(0, 20, length = 100)
+1585917128834:)
+1585917128843:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917128870:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917128871:geom_point(aes(color=mpg01),alpha=.5)+
+1585917128872:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917313512:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917313586:l
+1585917313589:grid <- expand.grid(
+1585917313590:weight = seq(1000, 5000, length = 100),
+1585917313591:acceleration = seq(0, 15, length = 100)
+1585917313591:)
+1585917313601:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917313622:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917313623:geom_point(aes(color=mpg01),alpha=.5)+
+1585917313624:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917320504:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917320524:l
+1585917320526:grid <- expand.grid(
+1585917320527:weight = seq(1000, 5000, length = 100),
+1585917320528:acceleration = seq(0, 20, length = 100)
+1585917320529:)
+1585917320538:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917320567:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917320568:geom_point(aes(color=mpg01),alpha=.5)+
+1585917320569:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917328367:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917328398:l
+1585917328400:grid <- expand.grid(
+1585917328401:weight = seq(1000, 5000, length = 100),
+1585917328402:acceleration = seq(0, 25, length = 100)
+1585917328403:)
+1585917328412:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917328470:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917328472:geom_point(aes(color=mpg01),alpha=.5)+
+1585917328472:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917519784:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917519805:l
+1585917519807:grid <- expand.grid(
+1585917519808:weight = seq(2000, 4000, length = 100),
+1585917519809:acceleration = seq(0, 25, length = 100)
+1585917519810:)
+1585917519819:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917519853:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917519853:geom_point(aes(color=mpg01),alpha=.5)+
+1585917519854:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917531443:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917531462:l
+1585917531465:grid <- expand.grid(
+1585917531466:weight = seq(3000, 3000, length = 100),
+1585917531467:acceleration = seq(0, 25, length = 100)
+1585917531467:)
+1585917531476:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917531507:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917531508:geom_point(aes(color=mpg01),alpha=.5)+
+1585917531509:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917546933:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917546953:l
+1585917546955:grid <- expand.grid(
+1585917546956:weight = seq(1000, 5000, length = 100),
+1585917546957:acceleration = seq(0, 25, length = 100)
+1585917546958:)
+1585917546967:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917546993:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917546994:geom_point(aes(color=mpg01),alpha=.5)+
+1585917546995:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917552780:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917552800:l
+1585917552802:grid <- expand.grid(
+1585917552803:weight = seq(1000, 5000, length = 200),
+1585917552803:acceleration = seq(0, 25, length = 100)
+1585917552804:)
+1585917552814:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917552860:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917552860:geom_point(aes(color=mpg01),alpha=.5)+
+1585917552861:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917565245:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917565265:l
+1585917565267:grid <- expand.grid(
+1585917565268:weight = seq(1000, 5000, length = 50),
+1585917565269:acceleration = seq(0, 25, length = 50)
+1585917565269:)
+1585917565277:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917565283:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917565284:geom_point(aes(color=mpg01),alpha=.5)+
+1585917565285:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917588199:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917588230:l
+1585917588232:grid <- expand.grid(
+1585917588233:weight = seq(1000, 5000, length = 50),
+1585917588234:acceleration = seq(0, 10, length = 50)
+1585917588235:)
+1585917588242:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917588248:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917588249:geom_point(aes(color=mpg01),alpha=.5)+
+1585917588250:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917596217:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917596236:l
+1585917596238:grid <- expand.grid(
+1585917596239:weight = seq(1000, 5000, length = 50),
+1585917596240:acceleration = seq(0, 25, length = 50)
+1585917596241:)
+1585917596248:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917596254:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917596255:geom_point(aes(color=mpg01),alpha=.5)+
+1585917596256:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917618111:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917618131:l
+1585917618133:grid <- expand.grid(
+1585917618134:weight = seq(1000, 5000, length = 50),
+1585917618135:acceleration = seq(0, 25, length = 100)
+1585917618136:)
+1585917618144:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917618154:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917618155:geom_point(aes(color=mpg01),alpha=.5)+
+1585917618156:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917628840:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917628862:l
+1585917628864:grid <- expand.grid(
+1585917628865:weight = seq(1000, 5000, length = 50),
+1585917628866:acceleration = seq(0, 30, length = 100)
+1585917628867:)
+1585917628875:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917628886:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917628887:geom_point(aes(color=mpg01),alpha=.5)+
+1585917628888:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917638492:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917638512:l
+1585917638514:grid <- expand.grid(
+1585917638514:weight = seq(1000, 5000, length = 50),
+1585917638515:acceleration = seq(0, 50, length = 100)
+1585917638516:)
+1585917638524:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917638534:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917638534:geom_point(aes(color=mpg01),alpha=.5)+
+1585917638535:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917644466:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917644485:l
+1585917644487:grid <- expand.grid(
+1585917644488:weight = seq(1000, 5000, length = 50),
+1585917644489:acceleration = seq(0, 35, length = 100)
+1585917644490:)
+1585917644498:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917644507:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917644508:geom_point(aes(color=mpg01),alpha=.5)+
+1585917644509:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917669857:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917669877:l
+1585917669879:grid <- expand.grid(
+1585917669880:weight = seq(1000, 5000, length = 50),
+1585917669881:acceleration = seq(0, 35, length = 100)
+1585917669882:)
+1585917669890:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917669900:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917669901:geom_point(aes(color=mpg01),alpha=.5)+
+1585917669902:geom_contour(data=grid,aes(z=prob),breaks=.5, color="yellow")
+1585917686633:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917686653:l
+1585917686655:grid <- expand.grid(
+1585917686656:weight = seq(1000, 5000, length = 100),
+1585917686657:acceleration = seq(0, 35, length = 100)
+1585917686658:)
+1585917686667:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917686684:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917686685:geom_point(aes(color=mpg01),alpha=.5)+
+1585917686686:geom_contour(data=grid,aes(z=prob),breaks=.5, color="yellow")
+1585917699371:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917699390:l
+1585917699392:grid <- expand.grid(
+1585917699393:weight = seq(1000, 5000, length = 100),
+1585917699394:acceleration = seq(0, 15, length = 100)
+1585917699395:)
+1585917699403:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917699420:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917699421:geom_point(aes(color=mpg01),alpha=.5)+
+1585917699422:geom_contour(data=grid,aes(z=prob),breaks=.5, color="yellow")
+1585917710954:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917710972:l
+1585917710974:grid <- expand.grid(
+1585917710975:weight = seq(1000, 5000, length = 100),
+1585917710976:acceleration = seq(0, 30, length = 100)
+1585917710977:)
+1585917710985:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917711016:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917711017:geom_point(aes(color=mpg01),alpha=.5)+
+1585917711018:geom_contour(data=grid,aes(z=prob),breaks=.5, color="yellow")
+1585917721822:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917721841:l
+1585917721843:grid <- expand.grid(
+1585917721844:weight = seq(1000, 5000, length = 100),
+1585917721845:acceleration = seq(0, 30, length = 100)
+1585917721846:)
+1585917721855:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917721872:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917721873:geom_point(aes(color=mpg01),alpha=.5)+
+1585917721874:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917747597:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917747616:l
+1585917747619:grid <- expand.grid(
+1585917747620:weight = seq(1000, 5000, length = 100),
+1585917747620:acceleration = seq(10, 30, length = 100)
+1585917747621:)
+1585917747631:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917747656:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917747657:geom_point(aes(color=mpg01),alpha=.5)+
+1585917747657:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917757218:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917757237:l
+1585917757239:grid <- expand.grid(
+1585917757240:weight = seq(1000, 5000, length = 100),
+1585917757241:acceleration = seq(5, 30, length = 100)
+1585917757241:)
+1585917757254:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917757275:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917757276:geom_point(aes(color=mpg01),alpha=.5)+
+1585917757277:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917779454:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917779473:l
+1585917779475:grid <- expand.grid(
+1585917779476:weight = seq(2000, 4000, length = 100),
+1585917779477:acceleration = seq(5, 30, length = 100)
+1585917779477:)
+1585917779486:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917779502:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917779503:geom_point(aes(color=mpg01),alpha=.5)+
+1585917779504:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917791333:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917791351:l
+1585917791353:grid <- expand.grid(
+1585917791354:weight = seq(1000, 6000, length = 100),
+1585917791355:acceleration = seq(5, 30, length = 100)
+1585917791357:)
+1585917791372:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917791388:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917791389:geom_point(aes(color=mpg01),alpha=.5)+
+1585917791390:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917835702:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917835722:l
+1585917835725:grid <- expand.grid(
+1585917835726:weight = seq(1000, 6000, length = 100),
+1585917835726:acceleration = seq(5, 50, length = 100)
+1585917835727:)
+1585917835736:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917835752:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917835752:geom_point(aes(color=mpg01),alpha=.5)+
+1585917835753:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917848694:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917848715:l
+1585917848717:grid <- expand.grid(
+1585917848718:weight = seq(1000, 6000, length = 100),
+1585917848719:acceleration = seq(0, 5, length = 100)
+1585917848720:)
+1585917848729:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917848745:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917848745:geom_point(aes(color=mpg01),alpha=.5)+
+1585917848746:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917855399:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917855416:l
+1585917855419:grid <- expand.grid(
+1585917855420:weight = seq(1000, 6000, length = 100),
+1585917855421:acceleration = seq(0, 35, length = 100)
+1585917855421:)
+1585917855430:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917855446:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917855446:geom_point(aes(color=mpg01),alpha=.5)+
+1585917855447:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917862325:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917862345:l
+1585917862347:grid <- expand.grid(
+1585917862348:weight = seq(1000, 6000, length = 100),
+1585917862349:acceleration = seq(0, 30, length = 100)
+1585917862350:)
+1585917862358:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917862374:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917862375:geom_point(aes(color=mpg01),alpha=.5)+
+1585917862376:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917870740:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917870759:l
+1585917870761:grid <- expand.grid(
+1585917870762:weight = seq(1000, 6000, length = 100),
+1585917870763:acceleration = seq(0, 10, length = 100)
+1585917870764:)
+1585917870772:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917870788:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917870789:geom_point(aes(color=mpg01),alpha=.5)+
+1585917870790:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917875608:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917875628:l
+1585917875631:grid <- expand.grid(
+1585917875632:weight = seq(1000, 6000, length = 100),
+1585917875632:acceleration = seq(0, 15, length = 100)
+1585917875633:)
+1585917875642:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917875657:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917875658:geom_point(aes(color=mpg01),alpha=.5)+
+1585917875659:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917885797:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917885816:l
+1585917885818:grid <- expand.grid(
+1585917885819:weight = seq(1000, 6000, length = 100),
+1585917885820:acceleration = seq(0, 30, length = 100)
+1585917885820:)
+1585917885829:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917885845:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917885846:geom_point(aes(color=mpg01),alpha=.5)+
+1585917885847:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917898581:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917898599:l
+1585917898602:grid <- expand.grid(
+1585917898603:weight = seq(1000, 5000, length = 100),
+1585917898603:acceleration = seq(0, 30, length = 100)
+1585917898604:)
+1585917898613:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917898629:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917898630:geom_point(aes(color=mpg01),alpha=.5)+
+1585917898631:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917956954:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917956972:l
+1585917956974:grid <- expand.grid(
+1585917956975:weight = seq(1000, 5000, length = 50),
+1585917956976:acceleration = seq(0, 30, length = 50)
+1585917956977:)
+1585917956984:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917956989:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917956990:geom_point(aes(color=mpg01),alpha=.5)+
+1585917956991:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917970207:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917970225:l
+1585917970228:grid <- expand.grid(
+1585917970229:weight = seq(1000, 5000, length = 80),
+1585917970229:acceleration = seq(0, 30, length = 80)
+1585917970230:)
+1585917970238:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917970249:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917970250:geom_point(aes(color=mpg01),alpha=.5)+
+1585917970251:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585917991123:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585917991143:l
+1585917991145:grid <- expand.grid(
+1585917991146:weight = seq(1000, 5000, length = 100),
+1585917991147:acceleration = seq(0, 30, length = 100)
+1585917991148:)
+1585917991156:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585917991183:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585917991183:geom_point(aes(color=mpg01),alpha=.5)+
+1585917991184:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918435815:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585918435833:l
+1585918435835:grid <- expand.grid(
+1585918435836:weight = seq(1000, 5000, length = 100),
+1585918435837:acceleration = seq(0, 30, length = 100)
+1585918435838:)
+1585918435846:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585918435873:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585918435874:geom_point(aes(color=mpg01),alpha=.5)+
+1585918435874:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918436086:pred <- predict(l,Atest)$class
+1585918436091:mean(Atest$mpg01 != pred)
+1585918502965:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585918503011:l
+1585918503013:grid <- expand.grid(
+1585918503014:weight = seq(1000, 5000, length = 100),
+1585918503015:acceleration = seq(0, 30, length = 100)
+1585918503016:)
+1585918503024:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585918503042:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585918503043:geom_point(aes(color=mpg01),alpha=.5)+
+1585918503043:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918503279:pred <- predict(l,Atest)$class
+1585918503283:mean(Atest$mpg01 != pred)
+1585918611012:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585918611030:l
+1585918611033:grid <- expand.grid(
+1585918611034:weight = seq(1000, 5000, length = 100),
+1585918611035:acceleration = seq(0, 30, length = 100)
+1585918611035:)
+1585918611044:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585918611060:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585918611061:geom_point(aes(color=mpg01),alpha=.5)+
+1585918611062:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918611287:pred <- predict(l,Atest)$class
+1585918611291:table(Atest$mpg01, pred)
+1585918611294:mean(Atest$mpg01 != pred)
+1585918646582:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585918646600:l
+1585918646602:grid <- expand.grid(
+1585918646603:weight = seq(1000, 5000, length = 100),
+1585918646604:acceleration = seq(0, 30, length = 100)
+1585918646605:)
+1585918646613:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585918646629:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585918646630:geom_point(aes(color=mpg01),alpha=.5)+
+1585918646631:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918646853:pred <- predict(l,Atest)$class
+1585918646858:table(Atest$mpg01, pred)
+1585918646861:mean(Atest$mpg01 == pred)
+1585918931208:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585918931230:l
+1585918931233:grid <- expand.grid(
+1585918931234:weight = seq(1000, 5000, length = 100),
+1585918931235:acceleration = seq(0, 30, length = 100)
+1585918931236:)
+1585918931244:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585918931271:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585918931272:geom_point(aes(color=mpg01),alpha=.5)+
+1585918931273:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918931579:pred <- predict(l,Atest)$class
+1585918931587:table(Atest$mpg01, pred)
+1585918931591:mean(Atest$mpg01 != pred)
+1585918945707:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585918945726:l
+1585918945728:grid <- expand.grid(
+1585918945729:weight = seq(1000, 5000, length = 100),
+1585918945730:acceleration = seq(0, 25, length = 100)
+1585918945731:)
+1585918945740:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585918945758:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585918945759:geom_point(aes(color=mpg01),alpha=.5)+
+1585918945759:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918945997:pred <- predict(l,Atest)$class
+1585918946001:table(Atest$mpg01, pred)
+1585918946005:mean(Atest$mpg01 != pred)
+1585918952123:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585918952142:l
+1585918952144:grid <- expand.grid(
+1585918952145:weight = seq(1000, 5000, length = 100),
+1585918952146:acceleration = seq(0, 35, length = 100)
+1585918952147:)
+1585918952156:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585918952173:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585918952174:geom_point(aes(color=mpg01),alpha=.5)+
+1585918952175:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585918952408:pred <- predict(l,Atest)$class
+1585918952413:table(Atest$mpg01, pred)
+1585918952416:mean(Atest$mpg01 != pred)
+1585919450829:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585919450848:l
+1585919450850:plot(l)
+1585919450859:grid <- expand.grid(
+1585919450860:weight = seq(1000, 5000, length = 100),
+1585919450861:acceleration = seq(0, 35, length = 100)
+1585919450862:)
+1585919450871:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585919450888:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585919450889:geom_point(aes(color=mpg01),alpha=.5)+
+1585919450890:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585919451138:pred <- predict(l,Atest)$class
+1585919451143:table(Atest$mpg01, pred)
+1585919451146:mean(Atest$mpg01 != pred)
+1585921363635:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585921368506:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585921368527:q
+1585921471221:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585921471242:q
+1585921471245:plot(q)
+1585922274746:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585922274768:q
+1585922274770:plot(q)
+1585922572063:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585922572082:l
+1585922572084:plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+1585922572091:grid <- expand.grid(
+1585922572091:weight = seq(1000, 5000, length = 100),
+1585922572092:acceleration = seq(0, 35, length = 100)
+1585922572093:)
+1585922572102:grid$prob <- predict(l, newdata = Atrain)$posterior[,"1"]
+1585922587312:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585922587332:l
+1585922587335:plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+1585922587341:grid <- expand.grid(
+1585922587342:weight = seq(1000, 5000, length = 100),
+1585922587343:acceleration = seq(0, 35, length = 100)
+1585922587344:)
+1585922587353:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585922587371:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585922587372:geom_point(aes(color=mpg01),alpha=.5)+
+1585922587373:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585922587612:pred <- predict(l,Atest)$class
+1585922587617:table(Atest$mpg01, pred)
+1585922587620:mean(Atest$mpg01 != pred)
+1585922757833:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585922757854:q
+1585922757855:qda.predict <- predict(q,Atest)
+1585922764460:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585922764480:q
+1585922764482:qda.predict <- predict(q,Atrain)
+1585922858786:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585922858808:q
+1585922858809:qda.grid <- expand.grid(
+1585922858810:weight = seq(1000, 5000, length = 100),
+1585922858811:acceleration = seq(0, 35, length = 100)
+1585922858812:)
+1585922918829:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585922918849:q
+1585922918851:qda.grid <- expand.grid(
+1585922918852:weight = seq(1000, 5000, length = 100),
+1585922918853:acceleration = seq(0, 35, length = 100)
+1585922918854:)
+1585922918863:qda.grid$prob <- predict(q, qda.grid)$posterior[,"1"]
+1585922964901:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585922964921:q
+1585922964923:qda.grid <- expand.grid(
+1585922964923:weight = seq(1000, 5000, length = 100),
+1585922964924:acceleration = seq(0, 35, length = 100)
+1585922964925:)
+1585922964934:qda.grid$prob <- predict(q, qda.grid)$posterior[,"1"]
+1585922964950:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585922964950:geom_point(aes(color=mpg01),alpha=.5)+
+1585922964951:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585923617161:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585923617180:q
+1585923617182:qda.grid <- expand.grid(
+1585923617183:weight = seq(1000, 5000, length = 100),
+1585923617184:acceleration = seq(0, 35, length = 100)
+1585923617185:)
+1585923617193:qda.grid$prob <- predict(q, qda.grid)$posterior[,"1"]
+1585923617209:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585923617210:geom_point(aes(color=mpg01),alpha=.5)+
+1585923617210:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585923617446:qpred <- predict(q,Atest)$class
+1585923617451:table(Atest$mpg01, qpred)
+1585923617454:mean(Atest$mpg01 != qpred)
+1585924407052:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585924407072:q
+1585924407074:qda.grid <- expand.grid(
+1585924407075:weight = seq(1000, 5000, length = 100),
+1585924407076:acceleration = seq(0, 35, length = 100)
+1585924407077:)
+1585924407086:qda.grid$prob <- predict(q, Ates)$posterior[,"1"]
+1585924416655:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585924416676:q
+1585924416678:qda.grid <- expand.grid(
+1585924416679:weight = seq(1000, 5000, length = 100),
+1585924416680:acceleration = seq(0, 35, length = 100)
+1585924416680:)
+1585924416689:qda.grid$prob <- predict(q,q.grid)$posterior[,"1"]
+1585924426226:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585924426246:q
+1585924426248:qda.grid <- expand.grid(
+1585924426249:weight = seq(1000, 5000, length = 100),
+1585924426250:acceleration = seq(0, 35, length = 100)
+1585924426251:)
+1585924426260:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585924426274:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585924426275:geom_point(aes(color=mpg01),alpha=.5)+
+1585924426276:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585924426519:qpred <- predict(q,Atest)$class
+1585924426530:table(Atest$mpg01, qpred)
+1585924426545:mean(Atest$mpg01 != qpred)
+1585924526267:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585924526289:q
+1585924526291:qda.grid <- expand.grid(
+1585924526292:weight = seq(1000, 5000, length = 100),
+1585924526293:acceleration = seq(0, 35, length = 100)
+1585924526294:)
+1585924526303:qda.grid$prob <- predict(q,newdata = Ates)$posterior[,"1"]
+1585924535905:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585924535928:q
+1585924535930:qda.grid <- expand.grid(
+1585924535931:weight = seq(1000, 5000, length = 100),
+1585924535932:acceleration = seq(0, 35, length = 100)
+1585924535932:)
+1585924535942:qda.grid$prob <- predict(q,qda,grid)$posterior[,"1"]
+1585924541940:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585924541962:q
+1585924541964:qda.grid <- expand.grid(
+1585924541965:weight = seq(1000, 5000, length = 100),
+1585924541966:acceleration = seq(0, 35, length = 100)
+1585924541967:)
+1585924541976:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585924542016:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585924542017:geom_point(aes(color=mpg01),alpha=.5)+
+1585924542018:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585924542254:qpred <- predict(q,Atest)$class
+1585924542259:table(Atest$mpg01, qpred)
+1585924542262:mean(Atest$mpg01 != qpred)
+1585924882944:l <- lda(mpg01~weight+acceleration,data=s, subset=Atrain)
+1585924909102:l <- lda(mpg01~weight+acceleration,data=Auto, subset=Atrain)
+1585924932363:l <- lda(mpg01~weight+acceleration,data=iris, subset=Atrain)
+1585924944040:l <- lda(mpg01~weight+acceleration,data=Auto, subset=Atrain)
+1585924961191:l <- lda(mpg01~weight+acceleration,data=m, subset=Atrain)
+1585924969597:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585924969617:l
+1585924969620:plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+1585924969626:grid <- expand.grid(
+1585924969627:weight = seq(1000, 5000, length = 100),
+1585924969628:acceleration = seq(0, 35, length = 100)
+1585924969629:)
+1585924969638:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585924969657:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585924969658:geom_point(aes(color=mpg01),alpha=.5)+
+1585924969659:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585924969910:pred <- predict(l,Atest)$class
+1585924969914:table(Atest$mpg01, pred)
+1585924969918:mean(Atest$mpg01 != pred)
+1585925166367:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585925166386:q
+1585925166388:qda.grid <- expand.grid(
+1585925166389:weight = seq(1000, 5000, length = 100),
+1585925166390:acceleration = seq(0, 35, length = 100)
+1585925166391:)
+1585925166399:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585925166414:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585925166415:geom_point(aes(color=mpg01),alpha=.5)+
+1585925166416:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585925166649:qpred <- predict(q,newdata = Atest)$class
+1585925166654:table(Atest$mpg01, qpred)
+1585925166657:mean(Atest$mpg01 != qpred)
+1585925183698:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585925183717:l
+1585925183719:plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+1585925183725:grid <- expand.grid(
+1585925183726:weight = seq(1000, 5000, length = 100),
+1585925183727:acceleration = seq(0, 35, length = 100)
+1585925183728:)
+1585925183737:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585925183769:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585925183770:geom_point(aes(color=mpg01),alpha=.5)+
+1585925183771:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585925184009:pred <- predict(l,newdata = Atest)$class
+1585925184015:table(Atest$mpg01, pred)
+1585925184018:mean(Atest$mpg01 != pred)
+1585926034443:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585926034466:l
+1585926034469:plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+1585926034476:grid <- expand.grid(
+1585926034476:weight = seq(1000, 5000, length = 100),
+1585926034477:acceleration = seq(0, 35, length = 100)
+1585926034478:)
+1585926034488:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585926034511:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585926034512:geom_point(aes(color=mpg01),alpha=.5)+
+1585926034513:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585926034773:pred <- predict(l,newdata = Atest)$class
+1585926034777:table(Atest$mpg01, pred)
+1585926034780:mean(Atest$mpg01 != pred)
+1585926085086:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585926085107:q
+1585926085109:qda.grid <- expand.grid(
+1585926085110:weight = seq(1000, 5000, length = 100),
+1585926085110:acceleration = seq(0, 35, length = 100)
+1585926085111:)
+1585926085120:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585926085148:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585926085149:geom_point(aes(color=mpg01),alpha=.5)+
+1585926085149:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585926085369:qpred <- predict(q,newdata = Atest)$class
+1585926085374:table(Atest$mpg01, qpred)
+1585926085389:mean(Atest$mpg01 != qpred)
+1585926226878:l <- lda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+1585926226899:l
+1585926260216:lda <- lda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+1585926260237:lda
+1585926294913:lda <- lda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+1585926294935:lda
+1585926294938:ldapred <- predict(lda,newdata = Atest)$class
+1585926294941:table(Atest$mpg01, ldapred)
+1585926294943:mean(Atest$mpg01 != ldapred)
+1585926783990:qda <- qda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+1585926784013:qda
+1585926784016:qdapred <- predict(qda,newdata = Atest)$class
+1585926784019:table(Atest$mpg01, qdapred)
+1585926784021:mean(Atest$mpg01 != qdapred)
+1585926897526:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585926897549:q
+1585926897551:qda.grid <- expand.grid(
+1585926897552:weight = seq(1000, 5000, length = 100),
+1585926897553:acceleration = seq(0, 35, length = 100)
+1585926897553:)
+1585926897564:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585926897585:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585926897586:geom_point(aes(color=mpg01),alpha=.5)+
+1585926897587:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585926897850:qpred <- predict(q,newdata = Atest)$class
+1585926897856:table(Atest$mpg01, qpred)
+1585926897860:mean(Atest$mpg01 != qpred)
+1585927163709:qda <- qda(mpg01~weight+acceleration+displacement+horsepower,data=Atest)
+1585927163729:qda
+1585927163732:qdapred <- predict(qda,newdata = Atest)$class
+1585927163735:table(Atest$mpg01, qdapred)
+1585927163737:mean(Atest$mpg01 != qdapred)
+1585927674896:qda <- qda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+1585927674920:qda
+1585927674923:qdapred <- predict(qda,newdata = Atest)$class
+1585927674928:table(Atest$mpg01, qdapred)
+1585927674932:mean(Atest$mpg01 != qdapred)
+1585927966369:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585927966391:q
+1585927966396:qda.grid <- expand.grid(
+1585927966398:weight = seq(1000, 5000, length = 100),
+1585927966400:acceleration = seq(0, 35, length = 100)
+1585927966401:)
+1585927966414:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585927966433:ggplot(data=Atest, aes(x=weight, y=acceleration)) +
+1585927966434:geom_point(aes(color=mpg01),alpha=.5)+
+1585927966435:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585927966684:qpred <- predict(q,newdata = Atest)$class
+1585927966689:table(Atest$mpg01, qpred)
+1585927966694:mean(Atest$mpg01 != qpred)
+1585928220891:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585928220914:q
+1585928220916:qda.grid <- expand.grid(
+1585928220917:weight = seq(1000, 5000, length = 100),
+1585928220918:acceleration = seq(0, 35, length = 100)
+1585928220918:)
+1585928220928:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585928220947:ggplot(data=Atest, aes(x=weight, y=acceleration)) +
+1585928220948:geom_point(aes(color=mpg01),alpha=.5)+
+1585928220949:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585928221211:qpred <- predict(q,newdata = Atest)$class
+1585928221216:table(Atest$mpg01, qpred)
+1585928221220:mean(Atest$mpg01 != qpred)
+1585928229352:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585928229371:q
+1585928229374:qda.grid <- expand.grid(
+1585928229374:weight = seq(1000, 5000, length = 100),
+1585928229375:acceleration = seq(0, 35, length = 100)
+1585928229376:)
+1585928229385:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585928229400:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585928229402:geom_point(aes(color=mpg01),alpha=.5)+
+1585928229404:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585928229647:qpred <- predict(q,newdata = Atest)$class
+1585928229652:table(Atest$mpg01, qpred)
+1585928229656:mean(Atest$mpg01 != qpred)
+1585928241494:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585928241514:q
+1585928241516:qda.grid <- expand.grid(
+1585928241517:weight = seq(1000, 5000, length = 100),
+1585928241517:acceleration = seq(0, 35, length = 100)
+1585928241518:)
+1585928241527:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585928241542:ggplot(data=Atest, aes(x=weight, y=acceleration)) +
+1585928241543:geom_point(aes(color=mpg01),alpha=.5)+
+1585928241544:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585928241784:qpred <- predict(q,newdata = Atest)$class
+1585928241789:table(Atest$mpg01, qpred)
+1585928241793:mean(Atest$mpg01 != qpred)
+1585928262222:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585928262242:q
+1585928262244:qda.grid <- expand.grid(
+1585928262245:weight = seq(1000, 5000, length = 100),
+1585928262245:acceleration = seq(0, 35, length = 100)
+1585928262246:)
+1585928262255:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585928262286:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585928262287:geom_point(aes(color=mpg01),alpha=.5)+
+1585928262288:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585928262511:qpred <- predict(q,newdata = Atest)$class
+1585928262516:table(Atest$mpg01, qpred)
+1585928262520:mean(Atest$mpg01 != qpred)
+1585928732510:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585928732533:q
+1585928732535:qda.grid <- expand.grid(
+1585928732536:weight = seq(1000, 5000, length = 100),
+1585928732536:acceleration = seq(0, 35, length = 100)
+1585928732537:)
+1585928732547:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585928732565:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585928732566:geom_point(aes(color=mpg01),alpha=.5)+
+1585928732567:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585928732802:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585928732824:ggplot(data=Atest, aes(x=weight, y=acceleration)) +
+1585928732825:geom_point(aes(color=mpg01),alpha=.5)+
+1585928732826:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585928733074:qpred <- predict(q,newdata = Atest)$class
+1585928733079:table(Atest$mpg01, qpred)
+1585928733083:mean(Atest$mpg01 != qpred)
+1585928750766:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585928750788:l
+1585928750790:plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+1585928750796:grid <- expand.grid(
+1585928750797:weight = seq(1000, 5000, length = 100),
+1585928750798:acceleration = seq(0, 35, length = 100)
+1585928750799:)
+1585928750808:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585928750829:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585928750830:geom_point(aes(color=mpg01),alpha=.5)+
+1585928750831:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585928751074:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585928751094:ggplot(data=Atest, aes(x=weight, y=acceleration)) +
+1585928751095:geom_point(aes(color=mpg01),alpha=.5)+
+1585928751096:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585928751346:pred <- predict(l,newdata = Atest)$class
+1585928751352:table(Atest$mpg01, pred)
+1585928751355:mean(Atest$mpg01 != pred)
+1585930730526:xdatatrain <- scale(Atrain[,3:6])
+1585930730535:means <- attr(xdata,"scaled:center")
+1585930739618:xdatatrain <- scale(Atrain[,3:6])
+1585930739627:means <- attr(xdatatrain,"scaled:center")
+1585930739630:sds<- attr(xdata,"scaled:scale")
+1585930745587:xdatatrain <- scale(Atrain[,3:6])
+1585930745597:means <- attr(xdatatrain,"scaled:center")
+1585930745600:sds<- attr(xdatatrain,"scaled:scale")
+1585930745603:xdataTest <- scale(Atest[,3:6], center=means, scale=sds)
+1585930745610:pred1 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=5)
+1585930745613:tab1 <- table(Atest$mpg01, pred1)
+1585930745617:tab1
+1585930745618:mean(Atest$mpg01 != pred1)
+1585930745620:pred2 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=30)
+1585930745623:tab2 <- table(Atest$mpg01, pred2)
+1585930745627:tab2
+1585930745629:mean(Atest$mpg01 != pred2)
+1585930792797:xdatatrain <- scale(Atrain[,3:6])
+1585930792807:means <- attr(xdatatrain,"scaled:center")
+1585930792810:sds<- attr(xdatatrain,"scaled:scale")
+1585930792812:xdataTest <- scale(Atest[,3:6], center=means, scale=sds)
+1585930792818:p1 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=5)
+1585930792820:t1 <- table(Atest$mpg01, p1)
+1585930792823:t1
+1585930792825:mean(Atest$mpg01 != p1)
+1585930792828:pred2 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=30)
+1585930792837:tab2 <- table(Atest$mpg01, pred2)
+1585930792843:tab2
+1585930792845:mean(Atest$mpg01 != pred2)
+1585930837930:xdatatrain <- scale(Atrain[,3:6])
+1585930837940:means <- attr(xdatatrain,"scaled:center")
+1585930837942:sds<- attr(xdatatrain,"scaled:scale")
+1585930837945:xdataTest <- scale(Atest[,3:6], center=means, scale=sds)
+1585930837951:p1 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=5)
+1585930837954:t1 <- table(Atest$mpg01, p1)
+1585930837957:t1
+1585930837959:mean(Atest$mpg01 != p1)
+1585930837961:p2 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=30)
+1585930837964:t2 <- table(Atest$mpg01, p2)
+1585930837968:t2
+1585930837970:mean(Atest$mpg01 != p2)
+1585930913168:xdatatrain <- scale(Atrain[,3:6])
+1585930913176:means <- attr(xdatatrain,"scaled:center")
+1585930913179:sds<- attr(xdatatrain,"scaled:scale")
+1585930913181:xdataTest <- scale(Atest[,3:6], center=means, scale=sds)
+1585930913188:p1 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=5)
+1585930913191:t1 <- table(Atest$mpg01, p1)
+1585930913194:t1
+1585930913196:mean(Atest$mpg01 != p1)
+1585930913198:p2 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=30)
+1585930913201:t2 <- table(Atest$mpg01, p2)
+1585930913205:t2
+1585930913206:mean(Atest$mpg01 != p2)
+1585930922903:suppressMessages(library(tidyverse))
+1585930922904:suppressMessages(library(ggplot2))
+1585930922905:suppressMessages(library(GGally))
+1585930924971:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1585930927510:# change to eval=T
+1585930927512:library(MASS)
+1585930927514:library(ISLR)
+1585930927516:library(class)
+1585930927517:m <- median(Auto$mpg)
+1585930927519:Auto$mpg01 <- factor(ifelse(Auto$mpg <= m, 0, 1))
+1585930927521:set.seed(1)
+1585930927522:s <- sample(nrow(Auto), round(.5*nrow(Auto)))
+1585930927525:Atrain <- Auto[s,]
+1585930927533:Atest <- Auto[-s,]
+1585930930142:ggplot(data=Atrain, aes(x=weight, y=acceleration, color=mpg01)) +
+1585930930144:geom_point(alpha=.5)
+1585930937495:l <- lda(mpg01~weight+acceleration,data=Atrain)
+1585930937514:l
+1585930937516:plot(l)#plots of linear discriminants#additional content for explaination of lda if it is less than 0, then it falls in group0 otherwise in group1.
+1585930937522:grid <- expand.grid(
+1585930937523:weight = seq(1000, 5000, length = 100),
+1585930937524:acceleration = seq(0, 35, length = 100)
+1585930937525:)
+1585930937534:grid$prob <- predict(l, grid)$posterior[,"1"]
+1585930937553:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585930937554:geom_point(aes(color=mpg01),alpha=.5)+
+1585930937555:geom_contour(data=grid,aes(z=prob),breaks=.5, color="black")
+1585930937801:pred <- predict(l,newdata = Atest)$class
+1585930937806:table(Atest$mpg01, pred)
+1585930937809:mean(Atest$mpg01 != pred)
+1585930942347:q <- qda(mpg01~weight+acceleration,data=Atrain)
+1585930942379:q
+1585930942381:qda.grid <- expand.grid(
+1585930942382:weight = seq(1000, 5000, length = 100),
+1585930942383:acceleration = seq(0, 35, length = 100)
+1585930942384:)
+1585930942393:qda.grid$prob <- predict(q,qda.grid)$posterior[,"1"]
+1585930942414:ggplot(data=Atrain, aes(x=weight, y=acceleration)) +
+1585930942415:geom_point(aes(color=mpg01),alpha=.5)+
+1585930942416:geom_contour(data=qda.grid,aes(z=prob),breaks=.5, color="black")
+1585930942654:qpred <- predict(q,newdata = Atest)$class
+1585930942659:table(Atest$mpg01, qpred)
+1585930942663:mean(Atest$mpg01 != qpred)
+1585930946692:lda <- lda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+1585930946712:lda
+1585930946715:ldapred <- predict(lda,newdata = Atest)$class
+1585930946718:table(Atest$mpg01, ldapred)
+1585930946720:mean(Atest$mpg01 != ldapred)
+1585930950950:qda <- qda(mpg01~weight+acceleration+displacement+horsepower,data=Atrain)
+1585930950975:qda
+1585930950977:qdapred <- predict(qda,newdata = Atest)$class
+1585930950981:table(Atest$mpg01, qdapred)
+1585930950983:mean(Atest$mpg01 != qdapred)
+1585930956542:xdatatrain <- scale(Atrain[,3:6])
+1585930956552:means <- attr(xdatatrain,"scaled:center")
+1585930956554:sds<- attr(xdatatrain,"scaled:scale")
+1585930956557:xdataTest <- scale(Atest[,3:6], center=means, scale=sds)
+1585930956563:p1 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=5)
+1585930956565:t1 <- table(Atest$mpg01, p1)
+1585930956569:t1
+1585930956570:mean(Atest$mpg01 != p1)
+1585930956572:p2 <- knn(xdatatrain, xdataTest, Atrain$mpg01, k=30)
+1585930956576:t2 <- table(Atest$mpg01, p2)
+1585930956579:t2
+1585930956581:mean(Atest$mpg01 != p2)
+1586374646922:knitr::opts_chunk$set(echo = TRUE)
+1586374647043:setwd("c:/users/mcharlton_2/Dropbox/MSc_Geocomputation_2016/Data_Science_Project")
+1586374671064:LondonData <- read.csv("DataScienceProj.csv",stringsAsFactors=FALSE)
+1586374864420:LondonData <- read.csv("DataScienceProj.csv",stringsAsFactors=FALSE)
+1586374879529:LondonData <- read.csv("DataScienceProj.csv",stringsAsFactors=FALSE)
+1586374879679:print(dim(LondonData))
+1586374879680:head(LondonData)
+1586374879691:str(LondonData)
+1586374879795:summary(LondonData)
+1587660943689:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1587660946097:suppressMessages(library(MASS))
+1587660946098:suppressMessages(library(randomForest))
+1587660946129:suppressMessages(library(gam))
+1587660946164:suppressMessages(library(tree))
+1587661533486:Boston
+1587661999482:set.seed(123)
+1587661999483:s <- sample(nrow(Boston), round(.5*nrow(Boston)))
+1587661999487:Btrain <- Boston[s,]
+1587661999497:Btest <- Boston[-s,]
+1587662022132:set.seed(123)
+1587662022133:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587662022136:Btrain <- Boston[s,]
+1587662022146:Btest <- Boston[-s,]
+1587662026255:set.seed(123)
+1587662026257:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587662026262:Btrain <- Boston[s,]
+1587662026272:Btest <- Boston[-s,]
+1587662041012:set.seed(123)
+1587662041014:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587662041017:Btrain <- Boston[s,]
+1587662041027:Btest <- Boston[-s,]
+1587662041036:Btrain
+1587662041056:Btest
+1587668955971:library(splines)
+1587668955974:set.seed(123)
+1587668955976:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587668955980:Btrain <- Boston[s,]
+1587668955989:Btest <- Boston[-s,]
+1587668956200:Btrain
+1587669089090:library(splines)
+1587669089093:set.seed(123)
+1587669089094:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669089098:Btrain <- Boston[s,]
+1587669089113:Btest <- Boston[-s,]
+1587669089125:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669100673:library(splines)
+1587669100675:set.seed(123)
+1587669100676:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669100679:Btrain <- Boston[s,]
+1587669100690:Btest <- Boston[-s,]
+1587669100700:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669100706:fit
+1587669129404:library(splines)
+1587669129406:set.seed(123)
+1587669129408:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669129412:Btrain <- Boston[s,]
+1587669129422:Btest <- Boston[-s,]
+1587669129432:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669129438:summary(fit)
+1587669180668:library(splines)
+1587669180671:set.seed(123)
+1587669180672:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669180676:Btrain <- Boston[s,]
+1587669180686:Btest <- Boston[-s,]
+1587669180696:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669180701:fit
+1587669272160:library(splines)
+1587669272162:set.seed(123)
+1587669272163:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669272165:Btrain <- Boston[s,]
+1587669272175:Btest <- Boston[-s,]
+1587669272184:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669272189:plot.Gam(fit)
+1587669349778:library(splines)
+1587669349781:set.seed(123)
+1587669349782:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669349786:Btrain <- Boston[s,]
+1587669349796:Btest <- Boston[-s,]
+1587669349806:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669349811:plot.Gam(fit,terms = "ns(medv,4)")
+1587669426760:library(splines)
+1587669426763:set.seed(123)
+1587669426765:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669426768:Btrain <- Boston[s,]
+1587669426779:Btest <- Boston[-s,]
+1587669426789:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669426794:plot.Gam(fit,terms="ns(medv,4)")
+1587669463303:library(splines)
+1587669463305:set.seed(123)
+1587669463306:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669463309:Btrain <- Boston[s,]
+1587669463319:Btest <- Boston[-s,]
+1587669463328:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669463333:plot.Gam(fit,terms="ns(age,4)")
+1587669474937:library(splines)
+1587669474939:set.seed(123)
+1587669474940:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669474944:Btrain <- Boston[s,]
+1587669474953:Btest <- Boston[-s,]
+1587669474962:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669474967:plot.Gam(fit,terms="ns(medv,4)")
+1587669529003:suppressMessages(library(MASS))
+1587669529005:suppressMessages(library(randomForest))
+1587669529006:suppressMessages(library(gam))
+1587669529007:suppressMessages(library(tree))
+1587669531772:library(splines)
+1587669531774:set.seed(123)
+1587669531775:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669531778:Btrain <- Boston[s,]
+1587669531788:Btest <- Boston[-s,]
+1587669531797:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669531802:plot.Gam(fit,terms="ns(medv,4)")
+1587669575656:library(splines)
+1587669575658:set.seed(123)
+1587669575659:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669575662:Btrain <- Boston[s,]
+1587669575672:Btest <- Boston[-s,]
+1587669575681:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669575686:plot.Gam(fit,terms = "ns(medv,4)")
+1587669646942:library(splines)
+1587669646945:set.seed(123)
+1587669646946:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669646949:Btrain <- Boston[s,]
+1587669646959:Btest <- Boston[-s,]
+1587669646969:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669646974:plot.Gam(fit,terms = "ns(medv,4)")
+1587669653476:library(splines)
+1587669653479:set.seed(123)
+1587669653481:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587669653484:Btrain <- Boston[s,]
+1587669653494:Btest <- Boston[-s,]
+1587669653503:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587669653508:plot.Gam(fit)
+1587670356857:library(splines)
+1587670356859:set.seed(123)
+1587670356861:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587670356864:Btrain <- Boston[s,]
+1587670356873:Btest <- Boston[-s,]
+1587670356883:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587670356887:plot.Gam(fit, terms = "ns(medv,4)")
+1587670365877:library(splines)
+1587670365880:set.seed(123)
+1587670365882:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587670365885:Btrain <- Boston[s,]
+1587670365895:Btest <- Boston[-s,]
+1587670365905:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587670365910:plot.Gam(fit, terms = "ns(medv, 4)")
+1587685277458:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1587685277541:library(splines)
+1587685277542:set.seed(123)
+1587685277543:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587685277546:Btrain <- Boston[s,]
+1587685277555:Btest <- Boston[-s,]
+1587685277564:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587685277572:plot.Gam(fit)
+1587685518314:fit
+1587685567603:summmary(fit)
+1587685575138:summary(fit)
+1587690695556:library(splines)
+1587690695558:set.seed(123)
+1587690695560:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587690695564:Btrain <- Boston[s,]
+1587690695579:Btest <- Boston[-s,]
+1587690695590:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587690695596:summary(fit)
+1587690695605:plot.Gam(fit)
+1587690695708:fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+1587690695713:summary(fit2)
+1587690695721:anova(fit,fit2)
+1587690939025:library(splines)
+1587690939027:set.seed(123)
+1587690939029:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587690939033:Btrain <- Boston[s,]
+1587690939043:Btest <- Boston[-s,]
+1587690939053:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587690939058:summary(fit)
+1587690939066:plot.Gam(fit)
+1587690939091:fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+1587690939096:summary(fit2)
+1587690939104:anova(fit,fit2)
+1587690948234:anova(fit2)
+1587690951541:fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+1587690954577:library(splines)
+1587690954579:set.seed(123)
+1587690954580:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587690954583:Btrain <- Boston[s,]
+1587690954594:Btest <- Boston[-s,]
+1587690954603:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587690954609:summary(fit)
+1587690954616:plot.Gam(fit)
+1587690954641:fit2 <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btest)
+1587690954646:summary(fit2)
+1587690954655:anova(fit)
+1587690954660:anova(fit2)
+1587691687874:library(splines)
+1587691687877:set.seed(123)
+1587691687878:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587691687882:Btrain <- Boston[s,]
+1587691687892:Btest <- Boston[-s,]
+1587691687902:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587691687907:summary(fit)
+1587691687915:plot.Gam(fit)
+1587691687941:fit2 <- lm(dis ~., data = Btrain)
+1587691687944:summary(fit2)
+1587691687953:anova(fit)
+1587691687958:anova(fit2)
+1587691703584:library(splines)
+1587691703591:set.seed(123)
+1587691703593:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587691703598:Btrain <- Boston[s,]
+1587691703610:Btest <- Boston[-s,]
+1587691703620:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587691703625:summary(fit)
+1587691703633:plot.Gam(fit)
+1587691703659:fit2 <- lm(dis ~., data = Btrain)
+1587691703663:summary(fit2)
+1587691703671:anova(fit,fit2)
+1587724388791:knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+1587724388877:library(splines)
+1587724388880:set.seed(123)
+1587724388881:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587724388883:Btrain <- Boston[s,]
+1587724388893:Btest <- Boston[-s,]
+1587724388903:fit <- glm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587724388914:summary(fit)
+1587724388925:plot.Gam(fit)
+1587724388965:fit2 <- lm(dis ~., data = Btrain)
+1587724388969:summary(fit2)
+1587724388978:anova(fit,fit2)
+1587724408889:library(splines)
+1587724408892:set.seed(123)
+1587724408893:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587724408896:Btrain <- Boston[s,]
+1587724408907:Btest <- Boston[-s,]
+1587724408918:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587724408924:summary(fit)
+1587724408933:plot.Gam(fit)
+1587724408970:fit2 <- lm(dis ~., data = Btrain)
+1587724408982:summary(fit2)
+1587724408990:anova(fit,fit2)
+1587725633237:library(splines)
+1587725633241:set.seed(123)
+1587725633242:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587725633246:Btrain <- Boston[s,]
+1587725633259:Btest <- Boston[-s,]
+1587725633270:fit <- glm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587725633277:summary(fit)
+1587725633285:plot.Gam(fit)
+1587725633312:fit2 <- lm(dis ~., data = Btrain)
+1587725633316:summary(fit2)
+1587725633324:anova(fit,fit2)
+1587726215700:library(splines)
+1587726215703:set.seed(123)
+1587726215704:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726215709:Btrain <- Boston[s,]
+1587726215719:Btest <- Boston[-s,]
+1587726215730:fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726215737:summary(fit)
+1587726215746:plot.Gam(fit)
+1587726215775:fit2 <- lm(dis ~., data = Btrain)
+1587726215779:summary(fit2)
+1587726215788:anova(fit,fit2)
+1587726225965:library(splines)
+1587726225967:set.seed(123)
+1587726225969:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726225972:Btrain <- Boston[s,]
+1587726225983:Btest <- Boston[-s,]
+1587726225994:fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726225999:summary(fit)
+1587726226008:plot.Gam(fit)
+1587726226033:fit2 <- lm(dis ~., data = Btrain)
+1587726226037:summary(fit2)
+1587726226046:anova(fit,fit2)
+1587726419183:library(splines)
+1587726419187:set.seed(123)
+1587726419188:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726419192:Btrain <- Boston[s,]
+1587726419204:Btest <- Boston[-s,]
+1587726419266:fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726532380:library(splines)
+1587726532382:set.seed(123)
+1587726532384:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726532387:Btrain <- Boston[s,]
+1587726532398:Btest <- Boston[-s,]
+1587726532408:fit <- glm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726532414:plot(fit)
+1587726563962:library(splines)
+1587726563965:set.seed(123)
+1587726563967:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726563970:Btrain <- Boston[s,]
+1587726563982:Btest <- Boston[-s,]
+1587726563994:fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726564000:plot(fit)
+1587726666159:library(splines)
+1587726666162:set.seed(123)
+1587726666163:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726666167:Btrain <- Boston[s,]
+1587726666178:Btest <- Boston[-s,]
+1587726666188:fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726666193:plot.gam(fit)
+1587726674799:library(splines)
+1587726674802:set.seed(123)
+1587726674803:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726674806:Btrain <- Boston[s,]
+1587726674827:Btest <- Boston[-s,]
+1587726674837:fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726674842:plot.Gam(fit)
+1587726747496:plot.Gam(fit)
+1587726763771:library(splines)
+1587726763774:set.seed(123)
+1587726763776:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726763780:Btrain <- Boston[s,]
+1587726763791:Btest <- Boston[-s,]
+1587726763801:fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726763806:plot(fit)
+1587726814155:library(splines)
+1587726814157:set.seed(123)
+1587726814159:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726814162:Btrain <- Boston[s,]
+1587726814173:Btest <- Boston[-s,]
+1587726814192:fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726823917:library(splines)
+1587726823920:set.seed(123)
+1587726823921:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726823925:Btrain <- Boston[s,]
+1587726823935:Btest <- Boston[-s,]
+1587726823950:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726956392:library(splines)
+1587726956394:set.seed(123)
+1587726956395:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726956409:Btrain <- Boston[s,]
+1587726956419:Btest <- Boston[-s,]
+1587726956428:fit <- gam(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726971293:library(splines)
+1587726971296:set.seed(123)
+1587726971299:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587726971302:Btrain <- Boston[s,]
+1587726971313:Btest <- Boston[-s,]
+1587726971323:fit <- gam(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587726971329:summary(fit)
+1587726984188:plot.Gam(fit)
+1587727176307:library(splines)
+1587727176310:set.seed(123)
+1587727176312:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587727176316:Btrain <- Boston[s,]
+1587727176326:Btest <- Boston[-s,]
+1587727176336:fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587727176343:summary(fit)
+1587727494332:library(splines)
+1587727494333:set.seed(123)
+1587727494335:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587727494337:Btrain <- Boston[s,]
+1587727494347:Btest <- Boston[-s,]
+1587727494357:fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587727507939:library(splines)
+1587727507942:set.seed(123)
+1587727507943:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587727507946:Btrain <- Boston[s,]
+1587727507958:Btest <- Boston[-s,]
+1587727507968:fit <- lm(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587727507973:summary(fit)
+1587727647960:library(splines)
+1587727647963:set.seed(123)
+1587727647964:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587727647968:Btrain <- Boston[s,]
+1587727647978:Btest <- Boston[-s,]
+1587727647988:fit <- gam(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587727647994:summary(fit)
+1587727749931:library(splines)
+1587727749933:set.seed(123)
+1587727749934:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587727749938:Btrain <- Boston[s,]
+1587727749948:Btest <- Boston[-s,]
+1587727749958:fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587727749964:summary(fit)
+1587728047111:simplify(fit)
+1587728212445:fit1 <- gam(log(dis) + ns(medv, 4) + ns(nox, 4) + age)
+1587728230952:fit1 <- gam(log(dis) + ns(medv, 4) + ns(nox, 4) + age)
+1587728276552:library(splines)
+1587728276555:set.seed(123)
+1587728276557:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587728276561:Btrain <- Boston[s,]
+1587728276571:Btest <- Boston[-s,]
+1587728276582:fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587728276588:summary(fit)
+1587728276596:plot(fit)
+1587728304583:fit1 <- gam(log(dis) + ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+1587728323112:fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+1587728323120:plot(fit1)
+1587728323147:summary(fit1)
+1587729117779:fit1 <- lm(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+1587729117788:plot(fit1)
+1587729117857:summary(fit1)
+1587729130783:fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+1587729130794:plot(fit1)
+1587729130822:summary(fit1)
+1587729529143:fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+1587729529150:plot(fit1)
+1587729529178:summary(fit1)
+1587729533240:plot.Gam(fit)
+1587729537377:library(splines)
+1587729537380:set.seed(123)
+1587729537382:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587729537386:Btrain <- Boston[s,]
+1587729537397:Btest <- Boston[-s,]
+1587729537408:fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587729537415:summary(fit)
+1587729537424:plot(fit)
+1587729623153:fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+1587729623162:plot(fit1)
+1587729623203:summary(fit1)
+1587730765685:fit1 <- gam(log(dis) ~ ns(medv, 4) + ns(nox, 4) + age, data=Btrain)
+1587730765692:plot(fit1)
+1587730765719:summary(fit1)
+1587730765727:anova(fit,fit1)
+1587731175720:library(splines)
+1587731175723:set.seed(123)
+1587731175725:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587731175729:Btrain <- Boston[s,]
+1587731175740:Btest <- Boston[-s,]
+1587731175752:fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587731175783:summary(fit)
+1587731175792:plot(fit)
+1587731182734:library(splines)
+1587731182737:set.seed(123)
+1587731182739:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587731182742:Btrain <- Boston[s,]
+1587731182753:Btest <- Boston[-s,]
+1587731182763:Btest
+1587731182779:fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587731182785:summary(fit)
+1587731182793:plot(fit)
+1587731517184:library(splines)
+1587731517187:set.seed(123)
+1587731517188:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587731517192:Btrain <- Boston[s,]
+1587731517202:Btest <- Boston[-s,]
+1587731517229:fit <- gam(log(dis) ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587731517235:summary(fit)
+1587731893330:library(tree)
+1587731893332:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587731893338:summary(tre)
+1587731932528:library(tree)
+1587731932531:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587731932536:summary(tre)
+1587731932540:plot(tre)
+1587731932544:text(tre, cex=.5, pretty=0)
+1587731953476:library(tree)
+1587731953478:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587731953484:summary(tre)
+1587731953488:plot(tre)
+1587731953491:text(tre, cex=.4, pretty=0)
+1587731960087:library(tree)
+1587731960090:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587731960094:summary(tre)
+1587731960099:plot(tre)
+1587731960102:text(tre, cex=.6, pretty=0)
+1587731992444:library(tree)
+1587731992446:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587731992451:summary(tre)
+1587731992455:plot(tre)
+1587731992458:text(tre, cex=.7, pretty=1)
+1587732000463:library(tree)
+1587732000465:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587732000469:summary(tre)
+1587732000473:plot(tre)
+1587732000477:text(tre, cex=.5, pretty=1)
+1587732007760:library(tree)
+1587732007762:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587732007768:summary(tre)
+1587732007771:plot(tre)
+1587732007774:text(tre, cex=.8, pretty=1)
+1587733266512:plot.Gam(fit,terms = "ns(medv, 4")
+1587733266523:plot.Gam(fit,terms = "ns(age, 4")
+1587733266536:plot.Gam(fit,terms = "ns(nox, 4")
+1587737338925:library(splines)
+1587737338928:set.seed(123)
+1587737338929:s <- sample(nrow(Boston), round(.6*nrow(Boston)))
+1587737338932:Btrain <- Boston[s,]
+1587737339210:Btest <- Boston[-s,]
+1587737339229:fit <- lm(dis ~ ns(medv,4) + ns(age,4) + ns(nox,4), data = Btrain)
+1587737339236:summary(fit)
+1587737342998:plot.Gam(fit,terms = "ns(medv, 4")
+1587737343010:plot.Gam(fit,terms = "ns(age, 4")
+1587737343023:plot.Gam(fit,terms = "ns(nox, 4")
+1587737629925:fit1 <- lm(dis ~ ns(medv,4) + ns(nox,4) + age, data = Btrain)
+1587737629932:summary(fit1)
+1587737629941:anova(fit1,fit)
+1587737844872:library(tree)
+1587737844874:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587737844880:summary(tre)
+1587737844884:plot(tre)
+1587737844887:text(tre, cex=.8, pretty=1)
+1587737844891:ems <- mean((predict(tre) - log(Btrain$dis))^2))
+1587737868323:library(tree)
+1587737868325:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587737868330:summary(tre)
+1587737868334:plot(tre)
+1587737868338:text(tre, cex=.8, pretty=1)
+1587737868341:(ems <- mean((predict(tre) - log(Btrain$dis))^2))
+1587737888620:library(tree)
+1587737888621:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587737888639:summary(tre)
+1587737888643:plot(tre)
+1587737888646:text(tre, cex=.8, pretty=1)
+1587737888650:ems <- mean((predict(tre) - log(Btrain$dis))^2)
+1587737888653:ems
+1587738155036:library(tree)
+1587738155039:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587738155044:summary(tre)
+1587738155049:plot(tre)
+1587738155054:text(tre, cex=.8, pretty=1)
+1587738155058:ems <- mean((predict(tre) - log(Btrain$dis))^2)
+1587738155062:ems
+1587738155064:pred <- predict(tre,newdata = Btest)
+1587738155068:mean((pred - log(Btest$dis))^2)
+1587738229951:library(tree)
+1587738229953:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587738229958:summary(tre)
+1587738229963:plot(tre)
+1587738229967:text(tre, cex=.8, pretty=1)
+1587738229972:ems <- mean((predict(tre) - log(Btrain$dis))^2)
+1587738229976:ems
+1587738229979:pred <- predict(tre,newdata = Btest)
+1587738229984:mean((pred - log(Btest$dis))^2)
+1587738560758:library(tree)
+1587738560761:tre <- tree(log(dis) ~ medv+age+nox, data=Btrain)
+1587738560767:summary(tre)
+1587738560771:plot(tre)
+1587738560776:text(tre, cex=.8, pretty=1)
+1587738560780:ems <- mean((predict(tre) - (Btrain$dis))^2)
+1587738560784:ems
+1587738560786:pred <- predict(tre,newdata = Btest)
+1587738560790:mean((pred - log(Btest$dis))^2)
+1587738609901:library(tree)
+1587738609903:tre <- tree(dis ~ medv+age+nox, data=Btrain)
+1587738609908:summary(tre)
+1587738609913:plot(tre)
+1587738609917:text(tre, cex=.8, pretty=1)
+1587738609921:ems <- mean((predict(tre) - (Btrain$dis))^2)
+1587738609925:ems
+1587738609928:pred <- predict(tre,newdata = Btest)
+1587738609933:mean((pred - log(Btest$dis))^2)
+1587738695861:library(tree)
+1587738695868:tre <- tree(dis ~ medv+age+nox, data=Btrain)
+1587738695876:summary(tre)
+1587738695882:plot(tre)
+1587738695887:text(tre, cex=.8, pretty=1)
+1587738695896:ems <- mean((predict(tre) - (Btrain$dis))^2)
+1587738695903:ems
+1587738695906:pred <- predict(tre,newdata = Btest)
+1587738695911:mean((pred - Btest$dis)^2)
+1587741575207:library(tree)
+1587741575209:tre <- tree(dis ~ medv+age+nox, data=Btrain)
+1587741575214:summary(tre)
+1587741575218:plot(tre)
+1587741575221:text(tre, cex=.8, pretty=1)
+1587741575225:ems <- mean((predict(tre) - (Btrain$dis))^2)
+1587741575228:ems
+1587741575229:tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+1587741575233:temse <- mean((predict(tre1)-(Btest$dis))^2)
+1587741588063:library(tree)
+1587741588065:tre <- tree(dis ~ medv+age+nox, data=Btrain)
+1587741588071:summary(tre)
+1587741588075:plot(tre)
+1587741588079:text(tre, cex=.8, pretty=1)
+1587741588083:ems <- mean((predict(tre) - (Btrain$dis))^2)
+1587741588086:ems
+1587741588089:tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+1587741588092:temse <- mean((predict(tre1)-(Btest$dis))^2)
+1587741588095:temse
+1587741629037:library(tree)
+1587741629038:tre <- tree(dis ~ medv+age+nox, data=Btrain)
+1587741629043:summary(tre)
+1587741629048:plot(tre)
+1587741629051:text(tre, cex=.8, pretty=1)
+1587741629054:ems <- mean((predict(tre) - (Btrain$dis))^2)
+1587741629058:ems
+1587741629060:tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+1587741629063:temse <- mean((predict(tre1)-(Btest$dis))^2)
+1587741629066:temse
+1587741646036:library(tree)
+1587741646038:tre <- tree(dis ~ medv+age+nox, data=Btrain)
+1587741646043:summary(tre)
+1587741646048:plot(tre)
+1587741646052:text(tre, cex=.8, pretty=1)
+1587741646056:ems <- mean((predict(tre) - (Btrain$dis))^2)
+1587741646060:ems
+1587741646063:tre1 <- tree(dis ~ medv+age+nox, data = Btest)
+1587741646068:temse <- mean((predict(tre1)-(Btest$dis))^2)
+1587741646072:temse
+1587741742049:cvtre <- cv.tree(tre)
+1587741742075:cvtre
+1587741833776:cvtre <- cv.tree(tre)
+1587741833813:cvtre
+1587741833816:plot(cvtre$size,cvtre$dev,type = "b")
+1587741919634:cvtre <- cv.tree(tre)
+1587741919661:cvtre
+1587741919664:plot(cvtre$size,cvtre$dev,type = "b")
+1587741919668:m <- which.min(cvtre$dev)
+1587741919670:cvtre$size[m]
+1587742099398:cvtre <- cv.tree(tre)
+1587742099430:cvtre
+1587742099433:plot(cvtre$size,cvtre$dev,type = "b")
+1587742099437:m <- which.min(cvtre$dev)
+1587742099439:cvtre$size[m]
+1587742099441:tree <- prune.tree(tre,best = 4)
+1587742099444:plot(tree)
+1587742099452:text(tree,cex = .5,pretty=0)
+1587742122525:cvtre <- cv.tree(tre)
+1587742122554:cvtre
+1587742122557:plot(cvtre$size,cvtre$dev,type = "b")
+1587742122560:m <- which.min(cvtre$dev)
+1587742122563:cvtre$size[m]
+1587742122565:tree <- prune.tree(tre,best = 4)
+1587742122567:plot(tree)
+1587742122576:text(tree,cex = .8,pretty=0)
+1587742489377:cvtre <- cv.tree(tre)
+1587742489412:cvtre
+1587742489415:plot(cvtre$size,cvtre$dev,type = "b")
+1587742489420:m <- which.min(cvtre$dev)
+1587742489423:cvtre$size[m]
+1587742489426:tree <- prune.tree(tre,best = 4)
+1587742489429:plot(tree)
+1587742489437:text(tree,cex = .8,pretty=0)
+1587742489441:t_msetr <- mean((predict(tree,Btrain)-(Btrain$dis))^2)
+1587742489445:t_msetr
+1587742542172:cvtre <- cv.tree(tre)
+1587742542200:cvtre
+1587742542203:plot(cvtre$size,cvtre$dev,type = "b")
+1587742542208:m <- which.min(cvtre$dev)
+1587742542210:cvtre$size[m]
+1587742542212:tree <- prune.tree(tre,best = 4)
+1587742542214:plot(tree)
+1587742542222:text(tree,cex = .8,pretty=0)
+1587742542226:t_msetr <- mean((predict(tree,Btrain)-(Btrain$dis))^2)
+1587742542229:t_msetr
+1587742542230:t_msete <- mean((predict(tree,Btest)-(Btest$dis))^2)
+1587742542233:t_msete
+1587743016925:ranfo <- randomForest(dis ~ medv + age + nox, data = Btrain)
+1587743099802:ranfo <- randomForest(dis ~ medv + age + nox, data = Btrain)
+1587743099948:ranfo_msetr<- mean((predict(ranfo,Btrain) - (Btrain$dis))^2)
+1587743099963:ranfo_msetr
+1587743202402:ranfo <- randomForest(dis ~ medv + age + nox, data = Btrain)
+1587743202562:ranfo_msetr<- mean((predict(ranfo,Btrain) - (Btrain$dis))^2)
+1587743202577:ranfo_msetr
+1587743202579:ranfo_msete <- mean((predict(ranfo,Btest) - (Btest$dis))^2)
+1587743202591:ranfo_msete
+1587743464178:g_msetr <- mean((predict(fit,Btrain) - (Btrain$dis))^2)
+1587743464184:g_msetr
+1587743512547:g_msetr <- mean((predict(fit,Btrain) - (Btrain$dis))^2)
+1587743512555:g_msetr
+1587743512558:g_msete <- mean((predict(fit,Btest) - (Btest$dis))^2)
+1587743512562:g_msete

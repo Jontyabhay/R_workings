@@ -1,0 +1,3 @@
+"0","kme2 <- as.factor(kmen$cluster)"
+"0","we1 <- data.frame(con,kme2)"
+"0","head(we1)"

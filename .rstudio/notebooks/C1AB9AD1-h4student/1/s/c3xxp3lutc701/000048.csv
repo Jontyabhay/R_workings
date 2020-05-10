@@ -1,0 +1,38 @@
+"0","library(tree)"
+"0","tre <- tree(dis ~ medv+age+nox, data=Btrain)"
+"0","summary(tre)"
+"1","
+Regression tree:
+"
+"1","tree(formula = dis ~ medv + age + nox, data = Btrain)
+"
+"1","Variables actually used in tree construction:
+"
+"1","[1]"
+"1"," ""nox"" "
+"1"," ""medv"""
+"1","
+"
+"1","Number of terminal nodes:  5 
+"
+"1","Residual mean deviance:  1.035 = 309.4 / 299 
+"
+"1","Distribution of residuals:
+"
+"1","    Min. "
+"1"," 1st Qu. "
+"1","  Median "
+"1","    Mean "
+"1"," 3rd Qu. "
+"1","    Max. "
+"1","
+"
+"1","-2.14700 "
+"1","-0.57740 "
+"1","-0.07306 "
+"1"," 0.00000 "
+"1"," 0.42270 "
+"1"," 5.04400 "
+"1","
+"
+"0","plot(tre)"

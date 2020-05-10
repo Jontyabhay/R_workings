@@ -1,0 +1,90 @@
+---
+title: "Assignment 1 ST464/ST684"
+author: "AKSHAY MISHRA(19250911)"
+date: "`r format(Sys.time(), '%X %d %B, %Y')`"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=4, fig.height=4)
+```
+
+
+```{r, eval=T, echo=FALSE}
+suppressMessages(library(tidyverse))
+suppressMessages(library(ggplot2))
+suppressMessages(library(GGally))
+
+```
+
+
+
+#### Question 4
+
+
+
+```{r eval=T} 
+# change to eval=T
+w <- read.csv("worldhappiness2019.csv")
+names(w)<- c( "Rank", "Country", "Score", "GDP", "Family", "Life", "Freedom", "Generosity", "Trust")
+rownames(w)<- w$Country
+wscores <- w[,-(1:3)]
+```
+
+(a)
+```{r}
+cor(wscores)
+plot(w$Generosity~w$Trust)
+```
+The pair of variables with the highest correlation are Trust and Freedom.
+The outlying country on this graph is ??.
+
+
+(b)
+```{r}
+
+```
+
+There are outlier countries called ???
+OR
+There are no outlier countries
+
+
+(c)
+```{r}
+
+```
+
+The cluster sizes are ??.
+Ireland belongs to cluster ??.
+India belongs to cluster ??.
+Cluster ?? has the highest Family score.
+Cluster ?? has the highest  scores overall.
+
+
+(d)
+```{r}
+
+```
+
+The lowest scoring cluster is unusual becuase ???
+
+(e)
+```{r}
+set.seed(123)
+```
+There are outlier countries called ???
+OR
+There are no outlier countries
+
+
+(f)
+```{r}
+
+```
+
+Cluster ?? has the highest Family score.
+Cluster ?? has the highest  scores overall.
+
